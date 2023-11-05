@@ -1,0 +1,82 @@
+.section-intro.intro.section .intro__front {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-intro.intro.section .intro__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.section-intro.intro.section .intro__img {
+  display: flex;
+  position: relative;
+}
+.section-intro.intro.section .intro__img .intro__img__front {
+  z-index: 1;
+}
+.section-intro.intro.section .intro__img .intro__img__back {
+  position: absolute;
+  z-index: 0;
+  left: -6%;
+}
+.section-intro.intro.section .intro__text div {
+  filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
+  color: #FFF;
+  font-family: "neskid";
+  font-size: 172.534px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-intro.intro.section .intro__text span {
+  filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.25));
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 4.3700003624px 0px rgba(0, 0, 0, 0.25);
+  font-family: Hey Comic;
+  font-size: 32.961px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 618px;
+}
+.section-intro.intro.section .intro__text button {
+  filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
+  color: #FFF;
+  text-shadow: 2.6194081306px 4.7149348259px 2.0955264568px rgba(0, 0, 0, 0.25);
+  font-family: "neskid";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+  border-radius: 96px;
+  background: #F09;
+  box-shadow: 0px -31px 83px 0px rgba(0, 0, 0, 0.2) inset;
+  padding: 19px 100px;
+  outline: none;
+  border: none;
+  align-self: center;
+  margin-top: 30px;
+}
+.section-intro.intro.section .intro__front.two .intro__text div {
+  font-size: 90px;
+}
+.section-intro.intro.section .intro__front.two .intro__text .list {
+  color: #FFF;
+  font-family: Hey Comic;
+  font-size: 32.961px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-intro.intro.section .intro__front.two .intro__text .list div {
+  color: #FFF;
+  font-family: Hey Comic;
+  font-size: 32.961px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}/*# sourceMappingURL=section-intro.css.map */

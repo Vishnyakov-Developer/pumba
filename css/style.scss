@@ -1,0 +1,187 @@
+@import 'fonts.scss';
+@import 'section-intro.scss';
+@import 'section-photo.scss';
+
+body {
+    background: rgba(255, 0, 184, 0.41);
+    position: relative;
+    &::after {
+        content: '';
+        position: fixed;
+        width: 1008.593px;
+        height: 636.577px;
+        flex-shrink: 0;
+
+        border-radius: 40%;
+        background: #FFA5A5;
+        filter: blur(175px);
+
+        top: 10%;
+        left: 0;
+        z-index: -1;
+    }
+
+    &::before {
+        content: '';
+        position: fixed;
+
+        width: 1008.593px;
+        height: 753.521px;
+        flex-shrink: 0;
+
+        border-radius: 40%;
+        background: #FFC0A5;
+        filter: blur(250px);
+
+        top: 0%;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.container {
+    box-sizing: border-box;
+
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header.header {
+    background: #FFF;
+    box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.10);
+    font-family: 'Hey Comic';
+    .header__line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 19px 0;
+    }
+    .header__buttons {
+        color: #000;
+        text-align: center;
+        font-family: Hey Comic;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+    .header__flex {
+        color: #000;
+        text-align: center;
+        font-family: Hey Comic;
+        font-size: 19.322px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        p {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+footer.footer {
+    padding: 35px 0 60px 0;
+    background: #FFF;
+    box-shadow: 0px 15px 56px 0px rgba(0, 0, 0, 0.25);
+    .footer__right {
+        display: flex;
+        flex-direction: column;
+        gap: 38.8px;
+        .footer__buttons {
+            display: flex;
+            color: #353F48;
+            font-family: Montserrat;
+            font-size: 14.495px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 149.9%; /* 21.728px */
+            gap: 30px;
+        }
+        .footer__input {
+            input {
+                padding-bottom: 16.5px;
+                color: #353F48;
+                font-family: Montserrat;
+                font-size: 21.408px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 149.9%; /* 32.091px */
+                border: none;
+                outline: none;
+                border-bottom: 1px solid rgba(53, 63, 72, 0.30);
+
+            }
+        }
+    }
+    .footer__text {
+        margin-top: 55px;
+        color: rgba(0, 0, 0, 0.40);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 149.9%; /* 17.988px */
+    }
+    .footer__flex {
+        display: flex;
+        justify-content: space-between;
+
+        .footer__logo {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            .footer__logo__downtext {
+                color: #353F48;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 149.9%; /* 20.986px */
+            }
+            .footer__logo__inner {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                .footer__logo__text {
+                    color: #000;
+                    text-align: center;
+                    font-family: Hey Comic;
+                    font-size: 19.322px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .footer__logo__descr {
+                    color: #353F48;
+                    font-family: Montserrat;
+                    font-size: 11.822px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 191.4%; /* 22.628px */
+                    opacity: 0.6;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
