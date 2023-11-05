@@ -1,0 +1,69 @@
+.section-done.done.section {
+    .done__title {
+        color: #FFF;
+        font-family: 'neskid';
+        font-size: 189.534px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 76px 0 41px 0;
+        text-align: center;
+    }
+
+    .done__block {
+        width: 85%;
+        padding: 45px 68px;
+        border-radius: 117.459px;
+        margin-bottom: 140px;
+        background: #FFF;
+        box-shadow: 0px 7.0125px 0px 0px rgba(0, 0, 0, 0.10);
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        .done__block__title {
+            color: #000;
+            text-align: center;
+            font-family: Hey Comic;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .done__input {
+            height: 179px;
+            text-align: center;
+
+            color: #F09;
+            text-align: center;
+            font-family: Hey Comic;
+            font-size: 60.387px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            border-radius: 69.175px;
+            border: 0.666px solid rgba(0, 0, 0, 0.40);
+            background: #FFF;
+        }
+
+        button {
+            border-radius: 84.15px;
+            background: #F09;
+            box-shadow: 0px -27.17344px 72.75468px 0px rgba(0, 0, 0, 0.15) inset;
+            align-self: center;
+            padding: 17px 63px;
+            display: inline-block;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            color: #FFF;
+            text-shadow: 2.296074867248535px 4.132935047149658px 1.8368598222732544px rgba(0, 0, 0, 0.25);
+            font-family: 'neskid';
+            font-size: 52.594px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}

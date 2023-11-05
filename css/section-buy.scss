@@ -1,0 +1,139 @@
+.section-buy.buy.section {
+    .buy__title {
+        color: #FFF;
+        text-align: center;
+        font-family: 'neskid';
+        font-size: 189.534px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 76px;
+        margin-bottom: 20px;
+    }
+    .buy__descr {
+        color: #FFF;
+        text-align: center;
+        text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+        font-family: 'neskid';
+        font-size: 52.468px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 44px;
+    }
+
+    .buy__progress {
+        width: 90%;
+        margin: auto;
+        .buy__progress__line {
+            width: 100%;
+            height: 92px;
+            border-radius: 116px;
+            background: #FE63C4;
+            margin: 0 auto;
+            box-shadow: 0px -4px 11px 0px rgba(0, 0, 0, 0.25) inset;
+            overflow: hidden;
+            position: relative;
+            div {
+                width: 80%; // test template
+                background: url('/source/progress.jpg');
+                height: 100%;
+                position: absolute;
+                left: 0;
+                animation: moveBackground 5s steps(30) infinite;
+                transition: all 0.5s;
+            }
+        }
+        .buy__progress__text {
+            display: flex;
+            justify-content: space-between;
+            color: #FFF;
+            text-align: center;
+            font-family: 'neskid';
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 20px;
+        }
+    }
+
+    .buy__tcat {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .buy__tcat__image {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            background: url('/source/bgpumbs.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            &.buy__tcat__image_two {
+                background: url('/source/bgpubm.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            img {
+
+            }
+        }
+
+        .buy__tcat__text {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 21px;
+            align-items: center;
+            .buy__tcat__text__default {
+                color: #FFF;
+                text-shadow: 5px 9px 0px rgba(0, 0, 0, 0.25);
+                font-family: 'neskid';
+                font-size: 92.159px;
+                font-style: normal;
+                text-align: center;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+
+    .buy__tcat__text__btns {
+        display: flex;
+        gap: 34px;
+        button {
+            padding: 20px 30px;
+            outline: none;
+            border: none;
+            &:first-child {
+                padding: 20px 100px;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 96px;
+            background: #F09;
+            box-shadow: 0px -31px 83px 0px rgba(0, 0, 0, 0.20) inset;
+
+            color: #FFF;
+            text-shadow: 2.619408130645752px 4.714934825897217px 2.0955264568328857px rgba(0, 0, 0, 0.25);
+            font-family: 'neskid';
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+
+@keyframes moveBackground
+{
+  0% {
+    transition: all 0.5s;
+    background-position: 0 0;
+  }
+  100% {
+    transition: all 0.5s;
+    background-position: 50rem 0;
+  }
+}

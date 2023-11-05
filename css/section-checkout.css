@@ -1,0 +1,197 @@
+.section-checkout.checkout.section .checkout__title {
+  color: #FFF;
+  font-family: "neskid";
+  font-size: 189.534px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding: 76px 0 41px 0;
+}
+.section-checkout.checkout.section .checkout__block {
+  width: 85%;
+  padding: 45px 68px;
+  border-radius: 117.459px;
+  background: #FFF;
+  box-shadow: 0px 7.0125px 0px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 175px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section-checkout.checkout.section .checkout__block button {
+  align-self: center;
+  display: inline-block;
+  margin: 50px 0;
+  padding: 16px 104px;
+  color: #FFF;
+  text-shadow: 2.2960748672px 4.1329350471px 1.8368598223px rgba(0, 0, 0, 0.25);
+  font-family: "neskid";
+  font-size: 52.594px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 84.15px;
+  background: #F09;
+  box-shadow: 0px -27.17344px 72.75468px 0px rgba(0, 0, 0, 0.15) inset;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__title {
+  margin-bottom: 105px;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  font-family: Hey Comic;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__card {
+  padding: 59px 55px;
+  border-radius: 50px;
+  border: 0.877px solid rgba(0, 0, 0, 0.4);
+  background: rgba(53, 63, 72, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__card .checkout__block__card__inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__card .checkout__block__card__input {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__card .checkout__block__card__input span {
+  color: #000;
+  font-family: Hey Comic;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__card .checkout__block__card__input input {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: Hey Comic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-indent: 34px;
+  border-radius: 14.025px;
+  border: 0.877px solid rgba(0, 0, 0, 0.4);
+  background: #FFF;
+  height: 106px;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks {
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  margin-bottom: 85px;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 98px 53px;
+  border-radius: 91px;
+  border: 0.877px solid rgba(0, 0, 0, 0.4);
+  background: #FFF;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__price {
+  color: #000;
+  text-align: center;
+  font-family: Hey Comic;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__item__text {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__item__text label {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  align-self: center;
+  border: 3px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__item__text label .circle {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  background: #F09;
+  border-radius: 50%;
+  position: relative;
+  left: 0px;
+  transition: 0.5s all;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__item__text span {
+  color: #000;
+  font-family: Hey Comic;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__item__text input {
+  display: none;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__item__text input:checked ~ label .circle {
+  opacity: 1;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item {
+  display: flex;
+  flex-direction: column;
+  gap: 15.1px;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item .error {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 0, 0, 0.9);
+  font-family: Hey Comic;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item span {
+  color: #FF5C99;
+  font-family: Hey Comic;
+  font-size: 31.556px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item input {
+  text-indent: 27px;
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Hey Comic;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 87px;
+  border-radius: 14.025px;
+  border: 0.877px solid rgba(0, 0, 0, 0.4);
+  background: #FFF;
+}/*# sourceMappingURL=section-checkout.css.map */

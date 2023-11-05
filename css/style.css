@@ -134,7 +134,12 @@
   font-weight: bold;
   font-style: italic;
 }
+.section-intro.intro.section button {
+  filter: none !important;
+}
 .section-intro.intro.section .intro__front {
+  padding-top: 150px;
+  margin-bottom: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -157,7 +162,7 @@
   z-index: 0;
   left: -6%;
 }
-.section-intro.intro.section .intro__text div {
+.section-intro.intro.section .intro__text > div {
   filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
   color: #FFF;
   font-family: "neskid";
@@ -197,8 +202,16 @@
   align-self: center;
   margin-top: 30px;
 }
+.section-intro.intro.section .intro__front.two .intro__text {
+  align-items: inherit;
+}
+.section-intro.intro.section .intro__front.two .intro__text button {
+  align-self: start;
+  margin-top: 70px;
+}
 .section-intro.intro.section .intro__front.two .intro__text div {
   font-size: 90px;
+  margin-bottom: 50px;
 }
 .section-intro.intro.section .intro__front.two .intro__text .list {
   color: #FFF;
@@ -273,6 +286,640 @@
   max-width: 307px;
   text-align: center;
   margin-bottom: 140px;
+}
+
+.section-buy.buy.section .buy__title {
+  color: #FFF;
+  text-align: center;
+  font-family: "neskid";
+  font-size: 189.534px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 76px;
+  margin-bottom: 20px;
+}
+.section-buy.buy.section .buy__descr {
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: "neskid";
+  font-size: 52.468px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 44px;
+}
+.section-buy.buy.section .buy__progress {
+  width: 90%;
+  margin: auto;
+}
+.section-buy.buy.section .buy__progress .buy__progress__line {
+  width: 100%;
+  height: 92px;
+  border-radius: 116px;
+  background: #FE63C4;
+  margin: 0 auto;
+  box-shadow: 0px -4px 11px 0px rgba(0, 0, 0, 0.25) inset;
+  overflow: hidden;
+  position: relative;
+}
+.section-buy.buy.section .buy__progress .buy__progress__line div {
+  width: 80%;
+  background: url("/source/progress.jpg");
+  height: 100%;
+  position: absolute;
+  left: 0;
+  animation: moveBackground 5s steps(30) infinite;
+  transition: all 0.5s;
+}
+.section-buy.buy.section .buy__progress .buy__progress__text {
+  display: flex;
+  justify-content: space-between;
+  color: #FFF;
+  text-align: center;
+  font-family: "neskid";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+}
+.section-buy.buy.section .buy__tcat {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.section-buy.buy.section .buy__tcat .buy__tcat__image {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background: url("/source/bgpumbs.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section-buy.buy.section .buy__tcat .buy__tcat__image.buy__tcat__image_two {
+  background: url("/source/bgpubm.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.section-buy.buy.section .buy__tcat .buy__tcat__text {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  align-items: center;
+}
+.section-buy.buy.section .buy__tcat .buy__tcat__text .buy__tcat__text__default {
+  color: #FFF;
+  text-shadow: 5px 9px 0px rgba(0, 0, 0, 0.25);
+  font-family: "neskid";
+  font-size: 92.159px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-buy.buy.section .buy__tcat__text__btns {
+  display: flex;
+  gap: 34px;
+}
+.section-buy.buy.section .buy__tcat__text__btns button {
+  padding: 20px 30px;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 96px;
+  background: #F09;
+  box-shadow: 0px -31px 83px 0px rgba(0, 0, 0, 0.2) inset;
+  color: #FFF;
+  text-shadow: 2.6194081306px 4.7149348259px 2.0955264568px rgba(0, 0, 0, 0.25);
+  font-family: "neskid";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-buy.buy.section .buy__tcat__text__btns button:first-child {
+  padding: 20px 100px;
+}
+
+@keyframes moveBackground {
+  0% {
+    transition: all 0.5s;
+    background-position: 0 0;
+  }
+  100% {
+    transition: all 0.5s;
+    background-position: 50rem 0;
+  }
+}
+.section-terms.terms.section .terms__title {
+  padding: 82px 0 32px 0;
+  color: #FFF;
+  font-family: "neskid";
+  font-size: 126.709px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-terms.terms.section .terms__block {
+  padding: 94px 67px;
+  border-radius: 117.459px;
+  background: #FFF;
+  box-shadow: 0px 7.0125px 0px 0px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-terms.terms.section .terms__block div {
+  color: #000;
+  text-align: center;
+  font-family: Hey Comic;
+  font-size: 34.069px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.section-terms.terms.section .terms__block span {
+  text-align: center;
+  color: #000;
+  font-family: Hey Comic;
+  font-size: 19.328px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-terms.terms.section .terms__block p {
+  text-align: center;
+  color: #000;
+  font-family: Hey Comic;
+  font-size: 28.391px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-terms.terms.section .terms__block button {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 35px;
+  border-radius: 84.15px;
+  background: #F09;
+  box-shadow: 0px -27.17344px 72.75468px 0px rgba(0, 0, 0, 0.15) inset;
+  width: 292px;
+  height: 95px;
+  color: #FFF;
+  text-shadow: 2.2960748672px 4.1329350471px 1.8368598223px rgba(0, 0, 0, 0.25);
+  font-family: "neskid";
+  font-size: 52.594px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-check.check.section .check__title {
+  padding: 76px 0 61px 0;
+  color: #FFF;
+  font-family: "neskid";
+  font-size: 189.534px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.section-check.check.section .check__form {
+  width: 85%;
+  padding: 45px 68px;
+  border-radius: 117.459px;
+  background: #FFF;
+  box-shadow: 0px 7.0125px 0px 0px rgba(0, 0, 0, 0.1);
+  margin: 61px 0 168px 0;
+  display: flex;
+  flex-direction: column;
+}
+.section-check.check.section .check__form .check__form__title {
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  font-family: Hey Comic;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 71px;
+}
+.section-check.check.section .check__form .check__form__button {
+  color: #FFF;
+  text-shadow: 2.2960748672px 4.1329350471px 1.8368598223px rgba(0, 0, 0, 0.25);
+  font-family: "neskid";
+  font-size: 52.594px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 80px;
+  align-self: center;
+  display: inline-block;
+  border-radius: 84.15px;
+  background: #F09;
+  box-shadow: 0px -27.17344px 72.75468px 0px rgba(0, 0, 0, 0.15) inset;
+  padding: 16px 55px;
+  cursor: pointer;
+}
+.section-check.check.section .check__form .check__form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+}
+.section-check.check.section .check__form .check__form__inputs .check__form__inputs__item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.section-check.check.section .check__form .check__form__inputs .check__form__inputs__item span {
+  color: #FF5C99;
+  font-family: Hey Comic;
+  font-size: 31.556px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-check.check.section .check__form .check__form__inputs .check__form__inputs__item input {
+  outline: none;
+  color: rgba(0, 0, 0, 0.3);
+  font-family: Hey Comic;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 14.025px;
+  border: 0.877px solid rgba(0, 0, 0, 0.4);
+  background: #FFF;
+  text-indent: 25px;
+  height: 87.656px;
+}
+.section-check.check.section .check__order {
+  display: flex;
+  flex-direction: column;
+  gap: 108px;
+  border-radius: 117.459px;
+  background: #FFF;
+  box-shadow: 0px 7.0125px 0px 0px rgba(0, 0, 0, 0.1);
+  width: 85%;
+  padding: 45px 68px;
+  margin-bottom: 226px;
+}
+.section-check.check.section .check__order .check__order__title {
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  font-family: Hey Comic;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-check.check.section .check__order .check__order__date {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-family: Hey Comic;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-check.check.section .check__order .check__order__status {
+  display: flex;
+  margin: 0 auto;
+  align-self: center;
+}
+.section-check.check.section .check__order .check__order__status .check__order__status__item {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 294px;
+  position: relative;
+}
+.section-check.check.section .check__order .check__order__status .check__order__status__item:last-child {
+  width: inherit;
+}
+.section-check.check.section .check__order .check__order__status .check__order__status__item:first-child::after {
+  display: none;
+}
+.section-check.check.section .check__order .check__order__status .check__order__status__item:not(.active) svg {
+  opacity: 0;
+}
+.section-check.check.section .check__order .check__order__status .check__order__status__item.active::after {
+  background: #F09;
+}
+.section-check.check.section .check__order .check__order__status .check__order__status__item::after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 295px;
+  left: -286px;
+  background: #FECBDE;
+  bottom: 122px;
+  z-index: 0;
+}
+.section-check.check.section .check__order .check__order__status .check__order__status__item.active .check__order__status__item__bar {
+  background: #F09;
+}
+.section-check.check.section .check__order .check__order__status .check__order__status__item .check__order__status__item__bar {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: 600px;
+  background: #FECBDE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.section-check.check.section .check__order .check__order__status .check__order__status__item .check__order__status__item__bar svg {
+  width: 25px;
+  height: 21.262px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.section-check.check.section .check__order .check__order__status .check__order__status__item .check__order__status__item__text {
+  color: #F09;
+  font-family: Hey Comic;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-done.done.section .done__title {
+  color: #FFF;
+  font-family: "neskid";
+  font-size: 189.534px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 76px 0 41px 0;
+  text-align: center;
+}
+.section-done.done.section .done__block {
+  width: 85%;
+  padding: 45px 68px;
+  border-radius: 117.459px;
+  margin-bottom: 140px;
+  background: #FFF;
+  box-shadow: 0px 7.0125px 0px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.section-done.done.section .done__block .done__block__title {
+  color: #000;
+  text-align: center;
+  font-family: Hey Comic;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-done.done.section .done__block .done__input {
+  height: 179px;
+  text-align: center;
+  color: #F09;
+  text-align: center;
+  font-family: Hey Comic;
+  font-size: 60.387px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 69.175px;
+  border: 0.666px solid rgba(0, 0, 0, 0.4);
+  background: #FFF;
+}
+.section-done.done.section .done__block button {
+  border-radius: 84.15px;
+  background: #F09;
+  box-shadow: 0px -27.17344px 72.75468px 0px rgba(0, 0, 0, 0.15) inset;
+  align-self: center;
+  padding: 17px 63px;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #FFF;
+  text-shadow: 2.2960748672px 4.1329350471px 1.8368598223px rgba(0, 0, 0, 0.25);
+  font-family: "neskid";
+  font-size: 52.594px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-checkout.checkout.section .checkout__title {
+  color: #FFF;
+  font-family: "neskid";
+  font-size: 189.534px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding: 76px 0 41px 0;
+}
+.section-checkout.checkout.section .checkout__block {
+  width: 85%;
+  padding: 45px 68px;
+  border-radius: 117.459px;
+  background: #FFF;
+  box-shadow: 0px 7.0125px 0px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 175px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section-checkout.checkout.section .checkout__block button {
+  align-self: center;
+  display: inline-block;
+  margin: 50px 0;
+  padding: 16px 104px;
+  color: #FFF;
+  text-shadow: 2.2960748672px 4.1329350471px 1.8368598223px rgba(0, 0, 0, 0.25);
+  font-family: "neskid";
+  font-size: 52.594px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 84.15px;
+  background: #F09;
+  box-shadow: 0px -27.17344px 72.75468px 0px rgba(0, 0, 0, 0.15) inset;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__title {
+  margin-bottom: 105px;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  font-family: Hey Comic;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__card {
+  padding: 59px 55px;
+  border-radius: 50px;
+  border: 0.877px solid rgba(0, 0, 0, 0.4);
+  background: rgba(53, 63, 72, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__card .checkout__block__card__inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__card .checkout__block__card__input {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__card .checkout__block__card__input span {
+  color: #000;
+  font-family: Hey Comic;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__card .checkout__block__card__input input {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: Hey Comic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-indent: 34px;
+  border-radius: 14.025px;
+  border: 0.877px solid rgba(0, 0, 0, 0.4);
+  background: #FFF;
+  height: 106px;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks {
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  margin-bottom: 85px;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 98px 53px;
+  border-radius: 91px;
+  border: 0.877px solid rgba(0, 0, 0, 0.4);
+  background: #FFF;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__price {
+  color: #000;
+  text-align: center;
+  font-family: Hey Comic;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__item__text {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__item__text label {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  align-self: center;
+  border: 3px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__item__text label .circle {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  background: #F09;
+  border-radius: 50%;
+  position: relative;
+  left: 0px;
+  transition: 0.5s all;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__item__text span {
+  color: #000;
+  font-family: Hey Comic;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__item__text input {
+  display: none;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__item__text input:checked ~ label .circle {
+  opacity: 1;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item {
+  display: flex;
+  flex-direction: column;
+  gap: 15.1px;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item .error {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 0, 0, 0.9);
+  font-family: Hey Comic;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item span {
+  color: #FF5C99;
+  font-family: Hey Comic;
+  font-size: 31.556px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item input {
+  text-indent: 27px;
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Hey Comic;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 87px;
+  border-radius: 14.025px;
+  border: 0.877px solid rgba(0, 0, 0, 0.4);
+  background: #FFF;
 }
 
 body {
@@ -358,6 +1005,8 @@ a {
 }
 
 footer.footer {
+  position: relative;
+  z-index: 1;
   padding: 35px 0 60px 0;
   background: #FFF;
   box-shadow: 0px 15px 56px 0px rgba(0, 0, 0, 0.25);

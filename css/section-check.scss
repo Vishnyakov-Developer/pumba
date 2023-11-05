@@ -1,0 +1,190 @@
+.section-check.check.section {
+    .check__title {
+        padding: 76px 0 61px 0;
+        color: #FFF;
+        font-family: 'neskid';
+        font-size: 189.534px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .check__form {
+        width: 85%;
+        padding: 45px 68px;
+        border-radius: 117.459px;
+        background: #FFF;
+        box-shadow: 0px 7.0125px 0px 0px rgba(0, 0, 0, 0.10);
+        margin: 61px 0 168px 0;
+        display: flex;
+        flex-direction: column;
+
+        .check__form__title {
+            color: rgba(0, 0, 0, 0.90);
+            text-align: center;
+            font-family: Hey Comic;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 71px;
+        }
+        .check__form__button {
+            color: #FFF;
+            text-shadow: 2.296074867248535px 4.132935047149658px 1.8368598222732544px rgba(0, 0, 0, 0.25);
+            font-family: 'neskid';
+            font-size: 52.594px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 80px;
+            align-self: center;
+            display: inline-block;
+            border-radius: 84.15px;
+            background: #F09;
+            box-shadow: 0px -27.17344px 72.75468px 0px rgba(0, 0, 0, 0.15) inset;
+            padding: 16px 55px;
+            cursor: pointer;
+        }
+        .check__form__inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 57px;
+            .check__form__inputs__item {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                span {
+                    color: #FF5C99;
+                    font-family: Hey Comic;
+                    font-size: 31.556px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                input {
+                    outline: none;
+                    color: rgba(0, 0, 0, 0.30);
+                    font-family: Hey Comic;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    border-radius: 14.025px;
+                    border: 0.877px solid rgba(0, 0, 0, 0.40);
+                    background: #FFF;
+                    text-indent: 25px;
+                    height: 87.656px;
+                }
+            }
+        }
+    }
+
+    .check__order {
+        display: flex;
+        flex-direction: column;
+        gap: 108px;
+        border-radius: 117.459px;
+        background: #FFF;
+        box-shadow: 0px 7.0125px 0px 0px rgba(0, 0, 0, 0.10);
+        width: 85%;
+        padding: 45px 68px;
+        margin-bottom: 226px;
+        .check__order__title {
+            color: rgba(0, 0, 0, 0.90);
+            text-align: center;
+            font-family: Hey Comic;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .check__order__date {
+            color: rgba(0, 0, 0, 0.80);
+            text-align: center;
+            font-family: Hey Comic;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .check__order__status {
+            display: flex;
+            margin: 0 auto;
+            align-self: center;
+            .check__order__status__item {
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+                width: 294px;
+                &:last-child {
+                    width: inherit;
+                }
+                &:first-child {
+                    // width: inherit;
+                    &::after {
+                        display: none;
+                    }
+                }
+                position: relative;
+                &:not(.active) {
+                    svg {
+                        opacity: 0;
+                    }
+                }
+                &.active {
+                    &::after {
+                        background: #F09;
+                    }    
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 15px;
+                    width: 295px;
+                    left: -286px;
+                    background: #FECBDE;
+                    bottom: 122px;
+                    z-index: 0;
+                }
+                &.active {
+                    .check__order__status__item__bar {
+                        background: #F09;
+                    }
+                }
+                .check__order__status__item__bar {
+                    width: 72px;
+                    height: 72px;
+                    flex-shrink: 0;
+                    border-radius: 600px;
+                    background: #FECBDE;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    z-index: 1;
+                    svg {
+                        width: 25px;
+                        height: 21.262px;
+                        flex-shrink: 0;  
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
+                .check__order__status__item__text {
+                    color: #F09;
+                    font-family: Hey Comic;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}

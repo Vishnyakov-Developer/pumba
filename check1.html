@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__line">
+                <a href="#" class="header__flex">
+                    <img src="/source/logo.svg" alt="">
+                    <p>
+                        <span>Pumba</span>
+                        <span>Plushie</span>
+                    </p>
+                </a>
+                <div class="header__buttons">
+                    <a href="#">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Track Order</a>
+                </div>
+                <div class="header__flex">
+                    <img src="/source/cart.svg" alt="">
+                    <p>Cart</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section-checkout section checkout">
+        <div class="container">
+            <div class="checkout__title">CHECKOUT</div>
+            <div class="checkout__block">
+                <div class="checkout__block__title">Customer Details</div>
+                <div class="checkout__block__inputs">
+                    <div class="checkout__block__inputs__item">
+                        <span>Email for order confirmation*</span>
+                        <input type="text">
+                    </div>
+                    <div class="checkout__block__inputs__item">
+                        <span>First name*</span>
+                        <input type="text">
+                    </div>
+                    <div class="checkout__block__inputs__item">
+                        <span>Last name*</span>
+                        <input type="text">
+                    </div>
+                    <div class="checkout__block__inputs__item">
+                        <span>Phone*</span>
+                        <input type="text">
+                        <div class="error">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                <g clip-path="url(#clip0_35_99)">
+                                  <path d="M14 0C11.2311 0 8.52431 0.821086 6.22202 2.35943C3.91973 3.89777 2.12532 6.08427 1.06569 8.64243C0.006066 11.2006 -0.271181 14.0155 0.269012 16.7313C0.809206 19.447 2.14258 21.9416 4.10051 23.8995C6.05845 25.8574 8.55301 27.1908 11.2687 27.731C13.9845 28.2712 16.7994 27.9939 19.3576 26.9343C21.9157 25.8747 24.1022 24.0803 25.6406 21.778C27.1789 19.4757 28 16.7689 28 14C27.996 10.2882 26.5197 6.72958 23.8951 4.10494C21.2704 1.4803 17.7118 0.0040146 14 0ZM14 25.6667C11.6926 25.6667 9.43693 24.9824 7.51835 23.7005C5.59978 22.4185 4.10443 20.5964 3.22141 18.4646C2.33839 16.3328 2.10735 13.9871 2.55751 11.7239C3.00767 9.46084 4.11881 7.38203 5.75043 5.75042C7.38204 4.11881 9.46084 3.00767 11.724 2.55751C13.9871 2.10734 16.3328 2.33838 18.4646 3.22141C20.5965 4.10443 22.4185 5.59977 23.7005 7.51835C24.9824 9.43692 25.6667 11.6926 25.6667 14C25.6633 17.0932 24.433 20.0586 22.2458 22.2458C20.0586 24.433 17.0932 25.6633 14 25.6667Z" fill="#FF0000"/>
+                                  <path d="M13.9999 5.83325C13.6905 5.83325 13.3938 5.95617 13.175 6.17496C12.9562 6.39375 12.8333 6.6905 12.8333 6.99992V16.3333C12.8333 16.6427 12.9562 16.9394 13.175 17.1582C13.3938 17.377 13.6905 17.4999 13.9999 17.4999C14.3093 17.4999 14.6061 17.377 14.8249 17.1582C15.0437 16.9394 15.1666 16.6427 15.1666 16.3333V6.99992C15.1666 6.6905 15.0437 6.39375 14.8249 6.17496C14.6061 5.95617 14.3093 5.83325 13.9999 5.83325Z" fill="#FF0000"/>
+                                  <path d="M15.1666 20.9999C15.1666 20.3556 14.6443 19.8333 13.9999 19.8333C13.3556 19.8333 12.8333 20.3556 12.8333 20.9999C12.8333 21.6443 13.3556 22.1666 13.9999 22.1666C14.6443 22.1666 15.1666 21.6443 15.1666 20.9999Z" fill="#FF0000"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_35_99">
+                                    <rect width="28" height="28" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                            </svg>
+                            Enter a phone number.
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__block__title">Delivery Details</div>
+                <div class="checkout__block__inputs">
+                    <div class="checkout__block__inputs__item">
+                        <span>Country</span>
+                        <input type="text" value="Latvia" placeholder="Latvia">
+                    </div>
+                    <div class="checkout__block__inputs__item">
+                        <span>Region*</span>
+                        <input type="text" value="Riga" placeholder="Riga">
+                    </div>
+                    <div class="checkout__block__inputs__item">
+                        <span>City*</span>
+                        <input type="text" value="" placeholder="">
+                    </div>
+                    <div class="checkout__block__inputs__item">
+                        <span>Address*</span>
+                        <input type="text" value="" placeholder="">
+                    </div>
+                    <div class="checkout__block__inputs__item">
+                        <span>Zip / Postal Code</span>
+                        <input type="text" value="" placeholder="LV-NNNN">
+                    </div>
+                </div>
+                <button>Continue</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__flex">
+                <div class="footer__logo">
+                    <div class="footer__logo__inner">
+                        <img src="/source/logo.svg" alt="">
+                        <p class="footer__logo__text">
+                            <span>Pumba</span>
+                            <span>Plushie</span>
+                        </p>
+                        <p class="footer__logo__descr">
+                            <span>© 2023. Pumba plushie.</span>
+                            <span>All rights reserved.</span>
+                        </p>
+                    </div>
+                    <div class="footer__logo__downtext">pumbacaracalstore@gmail.com</div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__input">
+                        <input type="text" placeholder="Navigation">
+                    </div>
+                    <div class="footer__buttons">
+                        <a href="#" class="footer__buttons__item">Home</a>
+                        <a href="#" class="footer__buttons__item">Track your order</a>
+                        <a href="#" class="footer__buttons__item">Reviews</a>
+                        <a href="#" class="footer__buttons__item">Privacy & Terms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__text">© Pumba Plushie, 2023. All materials on this website are copyrighted (including design). It is prohibited to copy, distribute (including by copying to other sites and resources on the Internet) or any other use of information and objects without the prior consent of the copyright holder. All information provided on the website is for informational purposes only and is not a public offer.</div>
+        </div>
+    </footer>
+</body>
+</html>
