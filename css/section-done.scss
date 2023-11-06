@@ -8,6 +8,16 @@
         line-height: normal;
         padding: 76px 0 41px 0;
         text-align: center;
+
+        @media(max-width: 700px) {
+            padding: 23px 0 10px 0;
+            color: #FFF;
+            text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+            font-size: 63.079px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
 
     .done__block {
@@ -20,6 +30,15 @@
         display: flex;
         flex-direction: column;
         gap: 70px;
+        @media(max-width: 700px) {
+            gap: 17px;
+            padding: 25px 22px;
+            border-radius: 29px;
+            background: #FFF;
+            box-shadow: 0px 2.04385px 0px 0px rgba(0, 0, 0, 0.10);
+            margin-bottom: 26px;
+
+        }
         .done__block__title {
             color: #000;
             text-align: center;
@@ -28,6 +47,16 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+
+            @media(max-width: 700px) {
+                color: #000;
+                text-align: center;
+                font-family: Hey Comic;
+                font-size: 14.967px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
         }
 
         .done__input {
@@ -45,6 +74,17 @@
             border-radius: 69.175px;
             border: 0.666px solid rgba(0, 0, 0, 0.40);
             background: #FFF;
+
+            @media(max-width: 700px) {
+                height: 52.287px;
+                color: #F09;
+                text-align: center;
+                font-family: Hey Comic;
+                font-size: 24.419px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
         }
 
         button {
@@ -64,6 +104,20 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            @media(max-width: 700px) {
+                color: #FFF;
+                text-shadow: 0.8126099109649658px 1.462697982788086px 0.6500878930091858px rgba(0, 0, 0, 0.25);
+                font-family: 'neskid';
+                font-size: 18.614px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            span {
+                @media(max-width: 700px) {
+                    display: none;
+                }
+            }
         }
     }
 }

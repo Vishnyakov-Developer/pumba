@@ -16,6 +16,19 @@
     margin-bottom: 15px;
   }
 }
+@media (max-width: 700px) {
+  .section-buy.buy.section .buy__title {
+    color: #FFF;
+    text-align: center;
+    font-family: "neskid";
+    filter: drop-shadow(1.3222619295px 2.9089763165px 0px rgba(0, 0, 0, 0.25));
+    font-size: 50.123px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 25px;
+  }
+}
 .section-buy.buy.section .buy__descr {
   color: #FFF;
   text-align: center;
@@ -27,9 +40,26 @@
   line-height: normal;
   margin-bottom: 44px;
 }
+@media (max-width: 700px) {
+  .section-buy.buy.section .buy__descr {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 1.2248220444px 0px rgba(0, 0, 0, 0.25);
+    font-size: 16.066px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 19px;
+  }
+}
 .section-buy.buy.section .buy__progress {
   width: 90%;
   margin: auto;
+}
+@media (max-width: 700px) {
+  .section-buy.buy.section .buy__progress {
+    width: 100%;
+  }
 }
 .section-buy.buy.section .buy__progress .buy__progress__line {
   width: 100%;
@@ -41,6 +71,11 @@
   overflow: hidden;
   position: relative;
 }
+@media (max-width: 700px) {
+  .section-buy.buy.section .buy__progress .buy__progress__line {
+    height: 24.33px;
+  }
+}
 .section-buy.buy.section .buy__progress .buy__progress__line div {
   width: 80%;
   background: url("/source/progress.jpg");
@@ -49,6 +84,11 @@
   left: 0;
   animation: moveBackground 5s steps(30) infinite;
   transition: all 0.5s;
+}
+@media (max-width: 700px) {
+  .section-buy.buy.section .buy__progress .buy__progress__line div {
+    background: url("/source/progress-mobile.jpg");
+  }
 }
 .section-buy.buy.section .buy__progress .buy__progress__text {
   display: flex;
@@ -62,9 +102,26 @@
   line-height: normal;
   margin-top: 20px;
 }
+@media (max-width: 700px) {
+  .section-buy.buy.section .buy__progress .buy__progress__text {
+    color: #FFF;
+    text-align: center;
+    font-family: "neskid";
+    font-size: 16.925px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 .section-buy.buy.section .buy__tcat {
   margin-top: 100px;
   margin-bottom: 100px;
+}
+@media (max-width: 700px) {
+  .section-buy.buy.section .buy__tcat {
+    margin-top: 17px;
+    margin-bottom: 38px;
+  }
 }
 .section-buy.buy.section .buy__tcat .buy__tcat__image {
   margin: 0 auto;
@@ -81,15 +138,30 @@
     background-size: contain;
   }
 }
+@media (max-width: 700px) {
+  .section-buy.buy.section .buy__tcat .buy__tcat__image {
+    width: 305px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .section-buy.buy.section .buy__tcat .buy__tcat__image.buy__tcat__image_two {
   background: url("/source/bgpubm.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
+@media (max-width: 700px) {
+  .section-buy.buy.section .buy__tcat .buy__tcat__image.buy__tcat__image_two {
+    width: 175px;
+  }
+}
 @media (max-width: 1300px) {
   .section-buy.buy.section .buy__tcat .buy__tcat__image img {
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .section-buy.buy.section .buy__tcat .buy__tcat__text {
@@ -144,11 +216,32 @@
 .section-buy.buy.section .buy__tcat__text__btns button:first-child {
   padding: 20px 100px;
 }
+@media (max-width: 700px) {
+  .section-buy.buy.section .buy__tcat__text__btns button:first-child {
+    padding: 11px 33px;
+  }
+}
 @media (max-width: 1300px) {
   .section-buy.buy.section .buy__tcat__text__btns button {
     border-radius: 60px;
     font-size: 40px;
     padding: 15px 25px;
+  }
+}
+@media (max-width: 700px) {
+  .section-buy.buy.section .buy__tcat__text__btns button {
+    color: #FFF;
+    text-shadow: 1.5522418022px 2.7940354347px 1.2417935133px rgba(0, 0, 0, 0.25);
+    font-size: 35.556px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 11px 33px;
+  }
+}
+@media (max-width: 700px) {
+  .section-buy.buy.section .buy__tcat__text__btns button img {
+    transform: scale(0.5);
   }
 }
 

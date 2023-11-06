@@ -13,6 +13,18 @@
     text-align: center;
   }
 }
+@media (max-width: 700px) {
+  .section-terms.terms.section .terms__title {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 23px 0;
+  }
+}
 .section-terms.terms.section .terms__block {
   padding: 94px 67px;
   border-radius: 117.459px;
@@ -27,6 +39,11 @@
   .section-terms.terms.section .terms__block {
     padding: 50px 30px;
     border-radius: 60px;
+  }
+}
+@media (max-width: 700px) {
+  .section-terms.terms.section .terms__block {
+    border-radius: 29px;
   }
 }
 .section-terms.terms.section .terms__block div {
@@ -49,6 +66,17 @@
     font-size: 21px;
   }
 }
+@media (max-width: 700px) {
+  .section-terms.terms.section .terms__block div {
+    color: #000;
+    text-align: center;
+    font-family: Hey Comic;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 .section-terms.terms.section .terms__block span {
   text-align: center;
   color: #000;
@@ -63,6 +91,17 @@
     font-size: 14px;
   }
 }
+@media (max-width: 700px) {
+  .section-terms.terms.section .terms__block span {
+    color: #000;
+    text-align: center;
+    font-family: Hey Comic;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 .section-terms.terms.section .terms__block p {
   text-align: center;
   color: #000;
@@ -75,6 +114,17 @@
 @media (max-width: 1300px) {
   .section-terms.terms.section .terms__block p {
     font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  .section-terms.terms.section .terms__block p {
+    color: #000;
+    text-align: center;
+    font-family: Hey Comic;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 .section-terms.terms.section .terms__block button {
@@ -102,5 +152,21 @@
 @media (max-width: 1300px) {
   .section-terms.terms.section .terms__block button {
     font-size: 42px;
+  }
+}
+@media (max-width: 700px) {
+  .section-terms.terms.section .terms__block button {
+    color: #FFF;
+    text-shadow: 0.812609911px 1.4626979828px 0.650087893px rgba(0, 0, 0, 0.25);
+    font-family: "neskid";
+    font-size: 18.614px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 6px 20px;
+    max-width: 100px;
+    border-radius: 29.782px;
+    margin: 30px auto;
+    max-height: 30px;
   }
 }/*# sourceMappingURL=section-terms.css.map */

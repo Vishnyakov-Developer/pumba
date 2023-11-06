@@ -9,12 +9,30 @@
   text-align: center;
   margin-top: 139px;
 }
+@media (max-width: 700px) {
+  .section-photo.photo.section .photo__title {
+    color: #FFF;
+    text-shadow: 4.1746006012px 7.5142817497px 0px rgba(0, 0, 0, 0.25);
+    font-family: "neskid";
+    font-size: 76.945px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+  }
+}
 .section-photo.photo.section .photo__slider {
   margin-top: 65px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+@media (max-width: 700px) {
+  .section-photo.photo.section .photo__slider {
+    width: 100%;
+    margin-top: 30px;
+  }
 }
 .section-photo.photo.section .photo__slider .photo__slider__arrow-left {
   position: absolute;
@@ -25,6 +43,13 @@
 @media (max-width: 1300px) {
   .section-photo.photo.section .photo__slider .photo__slider__arrow-left {
     transform: scale(0.5);
+  }
+}
+@media (max-width: 700px) {
+  .section-photo.photo.section .photo__slider .photo__slider__arrow-left {
+    left: -20%;
+    bottom: 30%;
+    transform: scale(0.3);
   }
 }
 .section-photo.photo.section .photo__slider .photo__slider__arrow-right {
@@ -38,6 +63,13 @@
     transform: scale(0.5);
   }
 }
+@media (max-width: 700px) {
+  .section-photo.photo.section .photo__slider .photo__slider__arrow-right {
+    right: -20%;
+    bottom: 30%;
+    transform: scale(0.3);
+  }
+}
 .section-photo.photo.section .photo__slider .photo__photo__gallery {
   width: 100%;
   border-radius: 83px;
@@ -48,6 +80,14 @@
     height: 568px;
     width: 442px;
     margin: 0 auto;
+  }
+}
+@media (max-width: 700px) {
+  .section-photo.photo.section .photo__slider .photo__photo__gallery {
+    width: 328.23px;
+    height: 385px;
+    flex-shrink: 0;
+    border-radius: 23.918px;
   }
 }
 .section-photo.photo.section .photo__slider .photo__photo__gallery img {
@@ -78,4 +118,15 @@
   max-width: 307px;
   text-align: center;
   margin-bottom: 140px;
+}
+@media (max-width: 700px) {
+  .section-photo.photo.section .photo__button {
+    color: #FFF;
+    text-shadow: 1.6606715918px 2.9892089367px 1.3285373449px rgba(0, 0, 0, 0.25);
+    font-size: 38.039px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=section-photo.css.map */

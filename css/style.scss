@@ -57,6 +57,10 @@ body {
     @media(max-width: 979px) {
         max-width: 700px;
     }
+
+    @media(max-width: 700px) {
+        max-width: 335px;
+    }
 }
 
 header.header {
@@ -68,6 +72,9 @@ header.header {
         align-items: center;
         justify-content: space-between;
         padding: 19px 0;
+        @media(max-width: 700px) {
+            padding: 12px 0;
+        }
     }
     .header__buttons {
         color: #000;
@@ -81,6 +88,17 @@ header.header {
         display: flex;
         align-items: center;
         gap: 28px;
+
+        @media(max-width: 700px) {
+            color: #000;
+            text-align: center;
+            font-family: Hey Comic;
+            font-size: 7.376px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            gap: 12px;
+        }
     }
     .header__flex {
         color: #000;
@@ -97,6 +115,23 @@ header.header {
         p {
             display: flex;
             flex-direction: column;
+            @media(max-width: 700px) {
+                color: #000;
+                text-align: center;
+                font-family: Hey Comic;
+                font-size: 8.677px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        img {
+            @media(max-width: 700px) {
+                width: 23.863px;
+                height: 25.598px;
+                flex-shrink: 0;
+            }
         }
     }
 }
@@ -130,6 +165,17 @@ footer.footer {
             @media(max-width: 990px) {
                 font-size: 11px;
             }
+
+            @media(max-width: 700px) {
+                gap: 0;
+                justify-content: space-between;
+                color: #353F48;
+                font-family: Montserrat;
+                font-size: 11.612px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 149.9%; /* 17.407px */
+            }
         }
         .footer__input {
             input {
@@ -156,11 +202,24 @@ footer.footer {
         font-style: normal;
         font-weight: 400;
         line-height: 149.9%; /* 17.988px */
+
+        @media(max-width: 700px) {
+            color: rgba(0, 0, 0, 0.40);
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 5.531px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 149.9%; /* 8.291px */
+        }
     }
     .footer__flex {
         display: flex;
         justify-content: space-between;
-
+         @media(max-width: 700px) {
+            flex-direction: column;
+            gap: 15px;
+        }
         .footer__logo {
             display: flex;
             flex-direction: column;
@@ -172,10 +231,13 @@ footer.footer {
                 font-style: normal;
                 font-weight: 600;
                 line-height: 149.9%; /* 20.986px */
+                @media(max-width: 700px) {
+                    display: none;
+                }
             }
             .footer__logo__inner {
                 display: flex;
-                gap: 20px;
+                gap: 20px; 
                 align-items: center;
                 .footer__logo__text {
                     color: #000;
@@ -187,6 +249,22 @@ footer.footer {
                     line-height: normal;
                     display: flex;
                     flex-direction: column;
+                    @media(max-width: 700px) {
+                        color: #000; 
+                        font-family: Hey Comic;
+                        font-size: 13.145px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+
+                img {
+                    @media(max-width: 700px) {
+                        width: 36.148px;
+                        height: 38.777px;
+                        flex-shrink: 0;
+                    }
                 }
 
                 .footer__logo__descr {
@@ -199,6 +277,15 @@ footer.footer {
                     opacity: 0.6;
                     display: flex;
                     flex-direction: column;
+
+                    @media(max-width: 700px) {
+                        color: #353F48;
+                        font-family: Montserrat;
+                        font-size: 7.77px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 191.4%; /* 14.872px */
+                    }
                 }
             }
         }

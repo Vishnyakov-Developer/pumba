@@ -13,6 +13,17 @@
             font-size: 100px;
             padding: 30px 0 20px 0;
         }
+
+        @media(max-width: 700px) {
+             padding: 23px 0 13px 0;
+             color: #FFF;
+            text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+            font-family: 'neskid';
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
 
     .check__form {
@@ -24,13 +35,20 @@
         margin: 61px 0 168px 0;
         display: flex;
         flex-direction: column;
-
+        
         @media(max-width: 990px) {
             margin: 20px 0 70px 0;
             padding: 20px 30px;
             margin-left: auto;
             margin-right: auto;
             border-radius: 60px;
+        }
+
+        @media(max-width: 700px) {
+            border-radius: 29px;
+            background: #FFF;
+            box-shadow: 0px 2.1125px 0px 0px rgba(0, 0, 0, 0.10);
+            margin: 0 0 25px 0;
         }
 
         .check__form__title {
@@ -45,6 +63,17 @@
 
             @media(max-width: 990px) {
                 font-size: 20px;
+            }
+
+            @media(max-width: 700px) {
+                color: rgba(0, 0, 0, 0.90);
+                text-align: center;
+                font-family: Hey Comic;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 11px;
             }
         }
         .check__form__button {
@@ -70,11 +99,26 @@
                 font-size: 30px;
                 border-radius: 30px;
             }
+
+            @media(max-width: 700px) {
+                color: #FFF;
+                text-shadow: 0.8731420040130615px 1.5716557502746582px 0.6985135674476624px rgba(0, 0, 0, 0.25);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-top: 18px;
+                padding: 7px 33px;
+            }
         }
         .check__form__inputs {
             display: flex;
             flex-direction: column;
             gap: 57px;
+            @media(max-width: 700px) {
+                gap: 22.2px;
+                
+            }
             .check__form__inputs__item {
                 display: flex;
                 flex-direction: column;
@@ -86,6 +130,15 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
+
+                    @media(max-width: 700px) {
+                        color: #FF5C99;
+                        font-family: Hey Comic;
+                        font-size: 12.148px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
                 }
 
                 input {
@@ -106,6 +159,18 @@
                         font-size: 18px;
                         height: 35px;
                         text-indent: 15px;
+                    }
+
+                    @media(max-width: 700px) {
+                        height: 33.225px;
+                        text-indent: 10px;
+                        color: rgba(0, 0, 0, 0.30);
+                        text-align: center;
+                        font-family: Hey Comic;
+                        font-size: 10.779px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
                     }
                 }
             }
@@ -131,6 +196,10 @@
             border-radius: 50px;
             margin-bottom: 50px;
         }
+        @media(max-width: 700px) {
+            gap: 0;
+            border-radius: 29px;
+        }
         .check__order__title {
             color: rgba(0, 0, 0, 0.90);
             text-align: center;
@@ -139,6 +208,16 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+
+            @media(max-width: 700px) {
+                color: rgba(0, 0, 0, 0.90);
+                text-align: center;
+                font-family: Hey Comic;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
         }
 
         .check__order__date {
@@ -149,6 +228,16 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            @media(max-width: 700px) {
+                color: rgba(0, 0, 0, 0.80);
+                text-align: center;
+                font-family: Hey Comic;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-top: 25px;
+            }
         }
         .check__order__status {
             display: flex;
@@ -161,6 +250,10 @@
 
             @media(max-width: 990px) {
                 transform: scale(0.4);
+            }
+            @media(max-width: 700px) {
+                transform: scale(0.3);
+                height: 70px;
             }
             .check__order__status__item {
                 display: flex;
@@ -196,6 +289,9 @@
                     background: #FECBDE;
                     bottom: 122px;
                     z-index: 0;
+                    @media(max-width: 700px) {
+                        bottom: 23px;
+                    }
                 }
                 &.active {
                     .check__order__status__item__bar {

@@ -13,6 +13,17 @@
     font-size: 100px;
   }
 }
+@media (max-width: 700px) {
+  .section-checkout.checkout.section .checkout__title {
+    padding: 27px 0 10px 0;
+    color: #FFF;
+    text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 63.079px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 .section-checkout.checkout.section .checkout__block {
   width: 85%;
   padding: 45px 68px;
@@ -28,6 +39,15 @@
 @media (max-width: 1300px) {
   .section-checkout.checkout.section .checkout__block {
     padding: 20px 30px;
+  }
+}
+@media (max-width: 700px) {
+  .section-checkout.checkout.section .checkout__block {
+    padding: 30px 42px;
+    border-radius: 29.209px;
+    background: #FFF;
+    box-shadow: 0px 3.15826px 0px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
   }
 }
 .section-checkout.checkout.section .checkout__block button {
@@ -54,6 +74,17 @@
     font-size: 30px;
   }
 }
+@media (max-width: 700px) {
+  .section-checkout.checkout.section .checkout__block button {
+    padding: 16px 46px;
+    color: #FFF;
+    text-shadow: 1.3582113981px 2.444781065px 1.08656919px rgba(0, 0, 0, 0.25);
+    font-size: 31.111px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 .section-checkout.checkout.section .checkout__block .checkout__block__title {
   margin-bottom: 105px;
   color: rgba(0, 0, 0, 0.9);
@@ -67,6 +98,22 @@
 @media (max-width: 1300px) {
   .section-checkout.checkout.section .checkout__block .checkout__block__title {
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .section-checkout.checkout.section .checkout__block .checkout__block__title {
+    color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    font-family: Hey Comic;
+    font-size: 28.887px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+@media (max-width: 700px) {
+  .section-checkout.checkout.section .checkout__block .checkout__block__title:not(:first-child) {
+    margin-top: 49px;
   }
 }
 .section-checkout.checkout.section .checkout__block .checkout__block__card {
@@ -233,6 +280,17 @@
     font-size: 23px;
   }
 }
+@media (max-width: 700px) {
+  .section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__item__text span {
+    color: #000;
+    text-align: center;
+    font-family: Hey Comic;
+    font-size: 10.573px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 .section-checkout.checkout.section .checkout__block .checkout__block__checks .checkout__block__checks__item .checkout__block__checks__item__text input {
   display: none;
 }
@@ -275,6 +333,22 @@
     font-size: 13px;
   }
 }
+@media (max-width: 700px) {
+  .section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item .error {
+    color: rgba(255, 0, 0, 0.9);
+    font-family: Hey Comic;
+    font-size: 9.008px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+@media (max-width: 700px) {
+  .section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item .error svg {
+    transform: scale(0.4);
+    gap: 5px;
+  }
+}
 .section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item span {
   color: #FF5C99;
   font-family: Hey Comic;
@@ -286,6 +360,16 @@
 @media (max-width: 1300px) {
   .section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item span {
     font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item span {
+    color: #FF5C99;
+    font-family: Hey Comic;
+    font-size: 14.212px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 .section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item input {
@@ -305,5 +389,11 @@
   .section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item input {
     height: 40px;
     font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .section-checkout.checkout.section .checkout__block .checkout__block__inputs .checkout__block__inputs__item input {
+    border-radius: 6.317px;
+    background: #FFF;
   }
 }/*# sourceMappingURL=section-checkout.css.map */

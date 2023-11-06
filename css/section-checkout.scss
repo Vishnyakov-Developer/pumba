@@ -12,6 +12,16 @@
         @media(max-width: 1300px) {
             font-size: 100px;
         }
+
+        @media(max-width: 700px) {
+            padding: 27px 0 10px 0;
+            color: #FFF;
+            text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+            font-size: 63.079px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
 
     .checkout__block {
@@ -28,6 +38,13 @@
 
         @media(max-width: 1300px) {
             padding: 20px 30px;
+        }
+        @media(max-width: 700px) {
+            padding: 30px 42px;
+            border-radius: 29.209px;
+            background: #FFF;
+            box-shadow: 0px 3.15826px 0px 0px rgba(0, 0, 0, 0.10);
+            margin-bottom: 30px;
         }
         button {
             align-self: center;
@@ -50,6 +67,15 @@
             @media(max-width: 1300px) {
                 font-size: 30px;
             }
+            @media(max-width: 700px) {
+                padding: 16px 46px;
+                color: #FFF;
+                text-shadow: 1.3582113981246948px 2.4447810649871826px 1.0865691900253296px rgba(0, 0, 0, 0.25);
+                font-size: 31.111px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
         }
         .checkout__block__title {
             margin-bottom: 105px;
@@ -60,9 +86,24 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-
+            
             @media(max-width: 1300px) {
                 margin-bottom: 30px;
+            }
+            @media(max-width: 700px) {
+                color: rgba(0, 0, 0, 0.90);
+                text-align: center;
+                font-family: Hey Comic;
+                font-size: 28.887px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &:not(:first-child) {
+                @media(max-width: 700px) {
+                    margin-top: 49px;
+                }
             }
         }
         .checkout__block__card {
@@ -216,6 +257,16 @@
                         @media(max-width: 990px) {
                             font-size: 23px;
                         }
+
+                        @media(max-width: 700px) {
+                            color: #000;
+                            text-align: center;
+                            font-family: Hey Comic;
+                            font-size: 10.573px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
                     }
 
                     input {
@@ -261,6 +312,20 @@
                     @media(max-width: 1300px) {
                         font-size: 13px;
                     }
+                    @media(max-width: 700px) {
+                        color: rgba(255, 0, 0, 0.90);
+                        font-family: Hey Comic;
+                        font-size: 9.008px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                    svg {
+                        @media(max-width: 700px) {
+                            transform: scale(0.4);
+                            gap: 5px;
+                        }
+                    }
                 }
                 span {
                     color: #FF5C99;
@@ -272,6 +337,15 @@
 
                     @media(max-width: 1300px) {
                         font-size: 20px;
+                    }
+
+                    @media(max-width: 700px) {
+                        color: #FF5C99;
+                        font-family: Hey Comic;
+                        font-size: 14.212px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
                     }
                 }
                 input {
@@ -291,6 +365,12 @@
                     @media(max-width: 1300px) {
                         height: 40px;
                         font-size: 20px;
+                    }
+
+                    @media(max-width: 700px) {
+                        border-radius: 6.317px;
+                        // border: 0.901px solid rgba(255, 0, 0, 0.90);
+                        background: #FFF;
                     }
                 }
             }

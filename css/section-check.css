@@ -14,6 +14,18 @@
     padding: 30px 0 20px 0;
   }
 }
+@media (max-width: 700px) {
+  .section-check.check.section .check__title {
+    padding: 23px 0 13px 0;
+    color: #FFF;
+    text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: "neskid";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 .section-check.check.section .check__form {
   width: 85%;
   padding: 45px 68px;
@@ -33,6 +45,14 @@
     border-radius: 60px;
   }
 }
+@media (max-width: 700px) {
+  .section-check.check.section .check__form {
+    border-radius: 29px;
+    background: #FFF;
+    box-shadow: 0px 2.1125px 0px 0px rgba(0, 0, 0, 0.1);
+    margin: 0 0 25px 0;
+  }
+}
 .section-check.check.section .check__form .check__form__title {
   color: rgba(0, 0, 0, 0.9);
   text-align: center;
@@ -46,6 +66,18 @@
 @media (max-width: 990px) {
   .section-check.check.section .check__form .check__form__title {
     font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .section-check.check.section .check__form .check__form__title {
+    color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    font-family: Hey Comic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 11px;
   }
 }
 .section-check.check.section .check__form .check__form__button {
@@ -73,10 +105,27 @@
     border-radius: 30px;
   }
 }
+@media (max-width: 700px) {
+  .section-check.check.section .check__form .check__form__button {
+    color: #FFF;
+    text-shadow: 0.873142004px 1.5716557503px 0.6985135674px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 18px;
+    padding: 7px 33px;
+  }
+}
 .section-check.check.section .check__form .check__form__inputs {
   display: flex;
   flex-direction: column;
   gap: 57px;
+}
+@media (max-width: 700px) {
+  .section-check.check.section .check__form .check__form__inputs {
+    gap: 22.2px;
+  }
 }
 .section-check.check.section .check__form .check__form__inputs .check__form__inputs__item {
   display: flex;
@@ -90,6 +139,16 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 700px) {
+  .section-check.check.section .check__form .check__form__inputs .check__form__inputs__item span {
+    color: #FF5C99;
+    font-family: Hey Comic;
+    font-size: 12.148px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 .section-check.check.section .check__form .check__form__inputs .check__form__inputs__item input {
   outline: none;
@@ -110,6 +169,19 @@
     font-size: 18px;
     height: 35px;
     text-indent: 15px;
+  }
+}
+@media (max-width: 700px) {
+  .section-check.check.section .check__form .check__form__inputs .check__form__inputs__item input {
+    height: 33.225px;
+    text-indent: 10px;
+    color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: Hey Comic;
+    font-size: 10.779px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 .section-check.check.section .check__order {
@@ -133,6 +205,12 @@
     margin-bottom: 50px;
   }
 }
+@media (max-width: 700px) {
+  .section-check.check.section .check__order {
+    gap: 0;
+    border-radius: 29px;
+  }
+}
 .section-check.check.section .check__order .check__order__title {
   color: rgba(0, 0, 0, 0.9);
   text-align: center;
@@ -142,6 +220,17 @@
   font-weight: 400;
   line-height: normal;
 }
+@media (max-width: 700px) {
+  .section-check.check.section .check__order .check__order__title {
+    color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    font-family: Hey Comic;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 .section-check.check.section .check__order .check__order__date {
   color: rgba(0, 0, 0, 0.8);
   text-align: center;
@@ -150,6 +239,18 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 700px) {
+  .section-check.check.section .check__order .check__order__date {
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-family: Hey Comic;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 25px;
+  }
 }
 .section-check.check.section .check__order .check__order__status {
   display: flex;
@@ -165,6 +266,12 @@
 @media (max-width: 990px) {
   .section-check.check.section .check__order .check__order__status {
     transform: scale(0.4);
+  }
+}
+@media (max-width: 700px) {
+  .section-check.check.section .check__order .check__order__status {
+    transform: scale(0.3);
+    height: 70px;
   }
 }
 .section-check.check.section .check__order .check__order__status .check__order__status__item {
@@ -195,6 +302,11 @@
   background: #FECBDE;
   bottom: 122px;
   z-index: 0;
+}
+@media (max-width: 700px) {
+  .section-check.check.section .check__order .check__order__status .check__order__status__item::after {
+    bottom: 23px;
+  }
 }
 .section-check.check.section .check__order .check__order__status .check__order__status__item.active .check__order__status__item__bar {
   background: #F09;
