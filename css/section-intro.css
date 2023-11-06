@@ -21,10 +21,22 @@
 .section-intro.intro.section .intro__img .intro__img__front {
   z-index: 1;
 }
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__img .intro__img__front {
+    width: 382px;
+  }
+}
 .section-intro.intro.section .intro__img .intro__img__back {
   position: absolute;
   z-index: 0;
   left: -6%;
+}
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__img .intro__img__back {
+    left: -3%;
+    bottom: -2px;
+    width: 388px;
+  }
 }
 .section-intro.intro.section .intro__text > div {
   filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
@@ -34,6 +46,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__text > div {
+    font-size: 130px;
+  }
 }
 .section-intro.intro.section .intro__text span {
   filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.25));
@@ -46,6 +63,12 @@
   font-weight: 400;
   line-height: normal;
   max-width: 618px;
+}
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__text span {
+    font-size: 24px;
+    text-align: end;
+  }
 }
 .section-intro.intro.section .intro__text button {
   filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
@@ -66,6 +89,12 @@
   align-self: center;
   margin-top: 30px;
 }
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__text button {
+    padding: 12px 50px;
+    font-size: 30px;
+  }
+}
 .section-intro.intro.section .intro__front.two .intro__text {
   align-items: inherit;
 }
@@ -76,6 +105,12 @@
 .section-intro.intro.section .intro__front.two .intro__text div {
   font-size: 90px;
   margin-bottom: 50px;
+  align-self: start;
+}
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__front.two .intro__text div {
+    font-size: 60px;
+  }
 }
 .section-intro.intro.section .intro__front.two .intro__text .list {
   color: #FFF;
@@ -85,6 +120,11 @@
   font-weight: 400;
   line-height: normal;
 }
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__front.two .intro__text .list {
+    font-size: 24px;
+  }
+}
 .section-intro.intro.section .intro__front.two .intro__text .list div {
   color: #FFF;
   font-family: Hey Comic;
@@ -92,4 +132,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__front.two .intro__text .list div {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=section-intro.css.map */

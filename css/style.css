@@ -157,10 +157,22 @@
 .section-intro.intro.section .intro__img .intro__img__front {
   z-index: 1;
 }
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__img .intro__img__front {
+    width: 382px;
+  }
+}
 .section-intro.intro.section .intro__img .intro__img__back {
   position: absolute;
   z-index: 0;
   left: -6%;
+}
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__img .intro__img__back {
+    left: -3%;
+    bottom: -2px;
+    width: 388px;
+  }
 }
 .section-intro.intro.section .intro__text > div {
   filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
@@ -170,6 +182,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__text > div {
+    font-size: 130px;
+  }
 }
 .section-intro.intro.section .intro__text span {
   filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.25));
@@ -182,6 +199,12 @@
   font-weight: 400;
   line-height: normal;
   max-width: 618px;
+}
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__text span {
+    font-size: 24px;
+    text-align: end;
+  }
 }
 .section-intro.intro.section .intro__text button {
   filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
@@ -202,6 +225,12 @@
   align-self: center;
   margin-top: 30px;
 }
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__text button {
+    padding: 12px 50px;
+    font-size: 30px;
+  }
+}
 .section-intro.intro.section .intro__front.two .intro__text {
   align-items: inherit;
 }
@@ -212,6 +241,12 @@
 .section-intro.intro.section .intro__front.two .intro__text div {
   font-size: 90px;
   margin-bottom: 50px;
+  align-self: start;
+}
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__front.two .intro__text div {
+    font-size: 60px;
+  }
 }
 .section-intro.intro.section .intro__front.two .intro__text .list {
   color: #FFF;
@@ -221,6 +256,11 @@
   font-weight: 400;
   line-height: normal;
 }
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__front.two .intro__text .list {
+    font-size: 24px;
+  }
+}
 .section-intro.intro.section .intro__front.two .intro__text .list div {
   color: #FFF;
   font-family: Hey Comic;
@@ -228,6 +268,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 1300px) {
+  .section-intro.intro.section .intro__front.two .intro__text .list div {
+    font-size: 24px;
+  }
 }
 
 .section-photo.photo.section .photo__title {
@@ -254,19 +299,43 @@
   left: -8%;
   cursor: pointer;
 }
+@media (max-width: 1300px) {
+  .section-photo.photo.section .photo__slider .photo__slider__arrow-left {
+    transform: scale(0.5);
+  }
+}
 .section-photo.photo.section .photo__slider .photo__slider__arrow-right {
   position: absolute;
   bottom: 43%;
   right: -8%;
   cursor: pointer;
 }
+@media (max-width: 1300px) {
+  .section-photo.photo.section .photo__slider .photo__slider__arrow-right {
+    transform: scale(0.5);
+  }
+}
 .section-photo.photo.section .photo__slider .photo__photo__gallery {
   width: 100%;
   border-radius: 83px;
   overflow: hidden;
 }
+@media (max-width: 1300px) {
+  .section-photo.photo.section .photo__slider .photo__photo__gallery {
+    height: 568px;
+    width: 442px;
+    margin: 0 auto;
+  }
+}
 .section-photo.photo.section .photo__slider .photo__photo__gallery img {
   width: 100%;
+}
+@media (max-width: 1300px) {
+  .section-photo.photo.section .photo__slider .photo__photo__gallery img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 .section-photo.photo.section .photo__button {
   border-radius: 96px;
@@ -600,6 +669,12 @@
   display: flex;
   margin: 0 auto;
   align-self: center;
+}
+@media (max-width: 1300px) {
+  .section-check.check.section .check__order .check__order__status {
+    transform: scale(0.7);
+    margin: 0;
+  }
 }
 .section-check.check.section .check__order .check__order__status .check__order__status__item {
   display: flex;
@@ -957,6 +1032,11 @@ body::before {
   box-sizing: border-box;
   max-width: 1280px;
   margin: 0 auto;
+}
+@media (max-width: 1300px) {
+  .container {
+    max-width: 950px;
+  }
 }
 
 header.header {

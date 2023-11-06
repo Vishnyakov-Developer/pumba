@@ -23,19 +23,38 @@
             bottom: 43%;
             left: -8%;
             cursor: pointer;
+
+            @media(max-width: 1300px) {
+                transform: scale(0.5);
+            }
         }
         .photo__slider__arrow-right {
             position: absolute;
             bottom: 43%;
             right: -8%;
             cursor: pointer;
+
+            @media(max-width: 1300px) {
+                transform: scale(0.5);
+            }
         }
         .photo__photo__gallery {
             width: 100%;
             border-radius: 83px;
             overflow: hidden;
+
+            @media(max-width: 1300px) {
+                height: 568px;
+                width: 442px;
+                margin: 0 auto;
+            }
             img {
                 width: 100%;
+
+                @media(max-width: 1300px) {
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
         }
     }

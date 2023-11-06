@@ -113,6 +113,12 @@
   margin: 0 auto;
   align-self: center;
 }
+@media (max-width: 1300px) {
+  .section-check.check.section .check__order .check__order__status {
+    transform: scale(0.7);
+    margin: 0;
+  }
+}
 .section-check.check.section .check__order .check__order__status .check__order__status__item {
   display: flex;
   flex-direction: column;
