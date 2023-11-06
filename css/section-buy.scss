@@ -9,6 +9,12 @@
         line-height: normal;
         margin-top: 76px;
         margin-bottom: 20px;
+
+        @media(max-width: 1300px) {
+            font-size: 100px;
+            margin-top: 50px;
+            margin-bottom: 15px;
+        }
     }
     .buy__descr {
         color: #FFF;
@@ -68,6 +74,13 @@
             background: url('/source/bgpumbs.svg');
             background-position: center;
             background-repeat: no-repeat;
+
+            @media(max-width: 1300px) {
+                width: 500px;
+                height: 512px;
+                background-size: contain;
+            }
+
             &.buy__tcat__image_two {
                 background: url('/source/bgpubm.svg');
                 background-position: center;
@@ -75,7 +88,9 @@
                 background-size: contain;
             }
             img {
-
+                @media(max-width: 1300px) {
+                    width: 100%;
+                }
             }
         }
 
@@ -94,6 +109,10 @@
                 text-align: center;
                 font-weight: 400;
                 line-height: normal;
+
+                @media(max-width: 1300px) {
+                    font-size: 40px;
+                }
             }
         }
     }
@@ -101,6 +120,9 @@
     .buy__tcat__text__btns {
         display: flex;
         gap: 34px;
+        @media(max-width: 1300px) {
+            gap: 20px;
+        }
         button {
             padding: 20px 30px;
             outline: none;
@@ -122,6 +144,12 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+
+            @media(max-width: 1300px) {
+                border-radius: 60px;
+                font-size: 40px;
+                padding: 15px 25px;
+            }
         }
     }
 }

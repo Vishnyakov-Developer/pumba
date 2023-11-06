@@ -53,6 +53,10 @@ body {
     @media(max-width: 1300px) {
         max-width: 950px;
     }
+
+    @media(max-width: 979px) {
+        max-width: 700px;
+    }
 }
 
 header.header {
@@ -122,6 +126,10 @@ footer.footer {
             font-weight: 400;
             line-height: 149.9%; /* 21.728px */
             gap: 30px;
+
+            @media(max-width: 990px) {
+                font-size: 11px;
+            }
         }
         .footer__input {
             input {

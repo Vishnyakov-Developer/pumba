@@ -8,6 +8,12 @@
   line-height: normal;
   text-align: center;
 }
+@media (max-width: 1300px) {
+  .section-check.check.section .check__title {
+    font-size: 100px;
+    padding: 30px 0 20px 0;
+  }
+}
 .section-check.check.section .check__form {
   width: 85%;
   padding: 45px 68px;
@@ -18,6 +24,15 @@
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 990px) {
+  .section-check.check.section .check__form {
+    margin: 20px 0 70px 0;
+    padding: 20px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 60px;
+  }
+}
 .section-check.check.section .check__form .check__form__title {
   color: rgba(0, 0, 0, 0.9);
   text-align: center;
@@ -27,6 +42,11 @@
   font-weight: 400;
   line-height: normal;
   margin-bottom: 71px;
+}
+@media (max-width: 990px) {
+  .section-check.check.section .check__form .check__form__title {
+    font-size: 20px;
+  }
 }
 .section-check.check.section .check__form .check__form__button {
   color: #FFF;
@@ -46,6 +66,12 @@
   box-shadow: 0px -27.17344px 72.75468px 0px rgba(0, 0, 0, 0.15) inset;
   padding: 16px 55px;
   cursor: pointer;
+}
+@media (max-width: 990px) {
+  .section-check.check.section .check__form .check__form__button {
+    font-size: 30px;
+    border-radius: 30px;
+  }
 }
 .section-check.check.section .check__form .check__form__inputs {
   display: flex;
@@ -79,6 +105,13 @@
   text-indent: 25px;
   height: 87.656px;
 }
+@media (max-width: 990px) {
+  .section-check.check.section .check__form .check__form__inputs .check__form__inputs__item input {
+    font-size: 18px;
+    height: 35px;
+    text-indent: 15px;
+  }
+}
 .section-check.check.section .check__order {
   display: flex;
   flex-direction: column;
@@ -89,6 +122,16 @@
   width: 85%;
   padding: 45px 68px;
   margin-bottom: 226px;
+}
+@media (max-width: 990px) {
+  .section-check.check.section .check__order {
+    padding: 15px 25px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+  }
 }
 .section-check.check.section .check__order .check__order__title {
   color: rgba(0, 0, 0, 0.9);
@@ -117,6 +160,11 @@
   .section-check.check.section .check__order .check__order__status {
     transform: scale(0.7);
     margin: 0;
+  }
+}
+@media (max-width: 990px) {
+  .section-check.check.section .check__order .check__order__status {
+    transform: scale(0.4);
   }
 }
 .section-check.check.section .check__order .check__order__status .check__order__status__item {

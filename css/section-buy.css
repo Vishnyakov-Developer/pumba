@@ -9,6 +9,13 @@
   margin-top: 76px;
   margin-bottom: 20px;
 }
+@media (max-width: 1300px) {
+  .section-buy.buy.section .buy__title {
+    font-size: 100px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+  }
+}
 .section-buy.buy.section .buy__descr {
   color: #FFF;
   text-align: center;
@@ -67,11 +74,23 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+@media (max-width: 1300px) {
+  .section-buy.buy.section .buy__tcat .buy__tcat__image {
+    width: 500px;
+    height: 512px;
+    background-size: contain;
+  }
+}
 .section-buy.buy.section .buy__tcat .buy__tcat__image.buy__tcat__image_two {
   background: url("/source/bgpubm.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+@media (max-width: 1300px) {
+  .section-buy.buy.section .buy__tcat .buy__tcat__image img {
+    width: 100%;
+  }
 }
 .section-buy.buy.section .buy__tcat .buy__tcat__text {
   margin-top: 15px;
@@ -90,9 +109,19 @@
   font-weight: 400;
   line-height: normal;
 }
+@media (max-width: 1300px) {
+  .section-buy.buy.section .buy__tcat .buy__tcat__text .buy__tcat__text__default {
+    font-size: 40px;
+  }
+}
 .section-buy.buy.section .buy__tcat__text__btns {
   display: flex;
   gap: 34px;
+}
+@media (max-width: 1300px) {
+  .section-buy.buy.section .buy__tcat__text__btns {
+    gap: 20px;
+  }
 }
 .section-buy.buy.section .buy__tcat__text__btns button {
   padding: 20px 30px;
@@ -114,6 +143,13 @@
 }
 .section-buy.buy.section .buy__tcat__text__btns button:first-child {
   padding: 20px 100px;
+}
+@media (max-width: 1300px) {
+  .section-buy.buy.section .buy__tcat__text__btns button {
+    border-radius: 60px;
+    font-size: 40px;
+    padding: 15px 25px;
+  }
 }
 
 @keyframes moveBackground {
