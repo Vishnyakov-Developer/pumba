@@ -62,5 +62,45 @@
             <div class="footer__text">© Pumba Plushie, 2023. All materials on this website are copyrighted (including design). It is prohibited to copy, distribute (including by copying to other sites and resources on the Internet) or any other use of information and objects without the prior consent of the copyright holder. All information provided on the website is for informational purposes only and is not a public offer.</div>
         </div>
     </footer>
+    <div class="cart">
+        <div class="cart__close" id="cart-close">
+            <svg class="mobile" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path d="M3 27L27 3" stroke="black" stroke-width="5.14727" stroke-linecap="round"/>
+                <path d="M27 27L3 3" stroke="black" stroke-width="5.14727" stroke-linecap="round"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="85" height="85" viewBox="0 0 85 85" fill="none">
+                <g filter="url(#filter0_d_56_165)">
+                  <path d="M22 63L71 14" stroke="white" stroke-width="10.509" stroke-linecap="round"/>
+                  <path d="M71 63L22 14" stroke="white" stroke-width="10.509" stroke-linecap="round"/>
+                </g>
+                <defs>
+                  <filter id="filter0_d_56_165" x="0.745499" y="0.745499" width="83.509" height="83.509" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="-4" dy="4"/>
+                    <feGaussianBlur stdDeviation="6"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_56_165"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_56_165" result="shape"/>
+                  </filter>
+                </defs>
+            </svg>
+        </div>
+        <div class="cart__inner">
+            <div class="cart__title">CART</div>
+            <div class="cart__image">
+                <img src="source/cart_cat.png" alt="">
+            </div>
+            <div class="cart__input">
+                <span id="minus">-</span>
+                <input type="text" value="2" placeholder="Кол-во">
+                <span id="plus">+</span>
+            </div>
+            <div class="cart__price">$55.98</div>
+            <div class="cart__button">ORDER</div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
