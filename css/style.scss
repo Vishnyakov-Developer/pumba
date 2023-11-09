@@ -8,6 +8,11 @@
 @import 'section-checkout.scss';
 
 body {
+    &.loading {
+        * {
+            transition: none !important;
+        }
+    }
     background: rgba(255, 0, 184, 0.41);
     position: relative;
     &::after {
@@ -290,4 +295,172 @@ footer.footer {
             }
         }
     }
+}
+
+.cart {
+    width: 636px;
+    background: #FFF;
+    box-shadow: -20px 4px 154px 0px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    
+    background: #FFF;
+    box-shadow: -20px 4px 154px 0px rgba(0, 0, 0, 0.15);
+    transform: translateX(150%);
+    transition: transform 1s;
+    @media(max-width: 860px) {
+        width: 100%;
+    }
+    &.active {
+        transform: translateX(0);
+    }
+    .cart__close {
+        position: absolute;
+        left: -110px;
+        top: 20px;
+        cursor: pointer;
+    }
+    &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track {
+        opacity: 0;
+    }
+    .cart__inner {
+        height: 100vh;
+        overflow-y: scroll;
+        &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track {
+            opacity: 0;
+        }
+        background: #FFF;
+        background: #FFF;
+        // box-shadow: -20px 4px 154px 0px rgba(0, 0, 0, 0.15);
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+        .cart__title {
+            color: #000;
+            font-family: 'neskid';
+            font-size: 90.091px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 25px;
+            @media(max-height: 880px) {
+                margin-top: 15px;
+                font-size: 80px;
+            }
+        }
+
+        .cart__image {
+            margin-top: 30px;
+            img {
+                max-width: 329px;
+                max-height: 337.232px;
+                flex-shrink: 0;
+                @media(max-height: 880px) {
+                    max-width: 229px;
+                    max-height: 237.232px;
+                }
+            }
+        }
+        
+        .cart__input {
+            margin-top: 30px;
+            display: flex;
+            gap: 27px;
+            align-items: center;
+
+            span {
+                color: #000;
+                font-family: 'neskid';
+                font-size: 84.333px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                @media(max-height: 770px) {
+                    font-size: 50px;
+                }
+            }
+
+            input {
+                max-width: 171.301px;
+                height: 77.003px;
+                flex-shrink: 0;
+                text-align: center;
+                color: #000;
+                font-family: 'neskid';
+                font-size: 59.583px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                border-radius: 12.32px;
+                border: 0.77px solid rgba(0, 0, 0, 0.40);
+                background: #FFF;
+                @media(max-height: 770px) {
+                    height: 50px;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .cart__price {
+            margin-top: 33px;
+            color: #000;
+            text-align: center;
+            font-family: 'neskid';
+            font-size: 54.766px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .cart__button {
+            margin-top: 61px;
+            width: 351.386px;
+            height: 94.874px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            color: #FFF;
+            text-shadow: 2.301057815551758px 4.141904354095459px 1.840846300125122px rgba(0, 0, 0, 0.25);
+            font-family: 'neskid';
+            font-size: 52.708px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            border-radius: 84.333px;
+            background: #F09;
+            box-shadow: 0px -27.23241px 72.91258px 0px rgba(0, 0, 0, 0.20) inset;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+html/* override x.xhtml.ru style */ 
+{
+  scrollbar-width: thin;
+  scrollbar-color: white rgba(255, 0, 184, 0.41);
+}
+
+html::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+html::-webkit-scrollbar-track {
+  background: rgba(255, 0, 184, 0.41);
+}
+html::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
+  border: 3px solid rgba(255, 0, 184, 0.41);
+}
+
+
+.none {
+    display: none !important;   
 }
