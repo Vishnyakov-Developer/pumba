@@ -361,6 +361,9 @@ footer.footer {
         display: flex;
         flex-direction: column;    
         align-items: center;
+        @media(max-width: 860px) {
+            justify-content: space-between;
+        }
         .cart__title {
             color: #000;
             font-family: 'neskid';
@@ -372,6 +375,14 @@ footer.footer {
             @media(max-height: 880px) {
                 margin-top: 15px;
                 font-size: 80px;
+            }
+            @media(max-width: 860px) {
+                color: #000;
+                font-family: 'neskid';
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                font-size: 70px;
             }
         }
 
@@ -404,6 +415,9 @@ footer.footer {
                 @media(max-height: 770px) {
                     font-size: 50px;
                 }
+                @media(max-width: 860px) {
+                    font-size: 35px;
+                }
             }
 
             input {
@@ -421,8 +435,14 @@ footer.footer {
                 border: 0.77px solid rgba(0, 0, 0, 0.40);
                 background: #FFF;
                 @media(max-height: 770px) {
-                    height: 50px;
+                    height: 45px;
                     font-size: 30px;
+                }
+                @media(max-width: 860px) {
+                    font-size: 25px;
+                    height: 30px;
+                    max-width: 100px;
+                    border-radius: 8px;
                 }
             }
         }
@@ -436,6 +456,10 @@ footer.footer {
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+
+            @media(max-width: 860px) {
+                font-size: 40px;
+            }
         }
 
         .cart__button {
@@ -460,6 +484,15 @@ footer.footer {
             background: #F09;
             box-shadow: 0px -27.23241px 72.91258px 0px rgba(0, 0, 0, 0.20) inset;
             margin-bottom: 60px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media(max-width: 860px) {
+                width: 200.386px;
+                height: 50.874px;
+                font-size: 25px;
+                margin-top: 40px;
+            }
         }
     }
 }
