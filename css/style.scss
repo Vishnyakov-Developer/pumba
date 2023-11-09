@@ -7,6 +7,10 @@
 @import 'section-done.scss';
 @import 'section-checkout.scss';
 
+section {
+    
+}
+
 body {
     &.loading {
         * {
@@ -321,6 +325,25 @@ footer.footer {
         left: -110px;
         top: 20px;
         cursor: pointer;
+        @media(max-width: 860px) {
+            left: inherit;
+            right: 32px;
+            top: 32px;
+        }
+        svg {
+            &:not(.mobile) {
+                @media(max-width: 860px) {
+                    display: none;
+                }
+            }
+            &.mobile {
+                display: none;
+                @media(max-width: 860px) {
+                    display: inherit
+                }
+            }
+        }
+
     }
     &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track {
         opacity: 0;
