@@ -1,11 +1,11 @@
 .section-intro.intro.section {
-    button {
+    a,button {
         filter: none !important;
     }
     .intro__front {
         
         padding-top: 150px;
-        margin-bottom: 80px;
+        padding-bottom: 80px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -170,7 +170,7 @@
                 line-height: normal;
             }
         }
-        button {
+        a,button {
             // filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
             color: #FFF;
             text-shadow: 2.619408130645752px 4.714934825897217px 2.0955264568328857px rgba(0, 0, 0, 0.25);
@@ -219,7 +219,7 @@
             .intro__text {
                 align-items: inherit;    
                 
-                button {
+                a,button {
                     align-self: start;
                     margin-top: 70px;
                     @media(max-width: 990px) {

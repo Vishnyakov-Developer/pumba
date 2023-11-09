@@ -8,10 +8,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="loader">
+        <div class="loader__inner">
+            <div class="loader__title">WAIT PLEASE...</div>
+            <div class="loader__figure svg-loader">
+                <svg class="svg-container" height="100" width="100" viewBox="0 0 100 100">
+                  <circle class="loader-svg bg" cx="50" cy="50" r="45"></circle>
+                  <circle class="loader-svg animate" cx="50" cy="50" r="45"></circle>
+                </svg>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__line">
-                <a href="#" class="header__flex">
+                <a href="/" class="header__flex">
                     <img src="source/logo.svg" alt="">
                     <p>
                         <span>Pumba</span>
@@ -19,9 +30,9 @@
                     </p>
                 </a>
                 <div class="header__buttons">
-                    <a href="#">Home</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Track Order</a>
+                    <a href="/">Home</a>
+                    <a href="/buy.html">Shop</a>
+                    <a href="/check_order.html">Track Order</a>
                 </div>
                 <div class="header__flex header__flex_cart">
                     <img src="source/cart.svg" alt="">
@@ -44,7 +55,7 @@
         <div class="container">
             <div class="footer__flex">
                 <div class="footer__logo">
-                    <div class="footer__logo__inner">
+                    <a href="/" class="footer__logo__inner">
                         <img src="source/logo.svg" alt="">
                         <p class="footer__logo__text">
                             <span>Pumba</span>
@@ -54,18 +65,18 @@
                             <span>© 2023. Pumba plushie.</span>
                             <span>All rights reserved.</span>
                         </p>
-                    </div>
-                    <div class="footer__logo__downtext">pumbacaracalstore@gmail.com</div>
+                    </a>
+                    <a href="pumbacaracalstore@gmail.com" class="footer__logo__downtext">pumbacaracalstore@gmail.com</a>
                 </div>
                 <div class="footer__right">
                     <div class="footer__input">
                         <input type="text" placeholder="Navigation">
                     </div>
                     <div class="footer__buttons">
-                        <a href="#" class="footer__buttons__item">Home</a>
-                        <a href="#" class="footer__buttons__item">Track your order</a>
-                        <a href="#" class="footer__buttons__item">Reviews</a>
-                        <a href="#" class="footer__buttons__item">Privacy & Terms</a>
+                        <a href="/" class="footer__buttons__item">Home</a>
+                        <a href="/check_order.html" class="footer__buttons__item">Track your order</a>
+                        <a href="/photos.html" class="footer__buttons__item">Reviews</a>
+                        <a href="/terms.html" class="footer__buttons__item">Privacy & Terms</a>
                     </div>
                 </div>
             </div>

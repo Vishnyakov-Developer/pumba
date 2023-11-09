@@ -1,3 +1,11 @@
+.section-check.check.section {
+  padding-bottom: 226px;
+}
+@media (max-width: 990px) {
+  .section-check.check.section {
+    padding-bottom: 50px;
+  }
+}
 .section-check.check.section .check__title {
   padding: 76px 0 61px 0;
   color: #FFF;
@@ -193,7 +201,6 @@
   box-shadow: 0px 7.0125px 0px 0px rgba(0, 0, 0, 0.1);
   width: 85%;
   padding: 45px 68px;
-  margin-bottom: 226px;
 }
 @media (max-width: 990px) {
   .section-check.check.section .check__order {

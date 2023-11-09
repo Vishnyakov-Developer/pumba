@@ -1,3 +1,11 @@
+.section-done.done.section {
+  padding-bottom: 140px;
+}
+@media (max-width: 700px) {
+  .section-done.done.section {
+    padding-bottom: 26px;
+  }
+}
 .section-done.done.section .done__title {
   color: #FFF;
   font-family: "neskid";
@@ -23,7 +31,6 @@
   width: 85%;
   padding: 45px 68px;
   border-radius: 117.459px;
-  margin-bottom: 140px;
   background: #FFF;
   box-shadow: 0px 7.0125px 0px 0px rgba(0, 0, 0, 0.1);
   display: flex;

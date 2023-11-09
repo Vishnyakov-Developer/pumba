@@ -1,3 +1,12 @@
+.section-photo.photo.section {
+  padding-top: 139px;
+  padding-bottom: 100px;
+}
+@media (max-width: 700px) {
+  .section-photo.photo.section {
+    padding-top: 20px;
+  }
+}
 .section-photo.photo.section .photo__title {
   color: #FFF;
   text-shadow: 9.5283021927px 17.1509437561px 0px rgba(0, 0, 0, 0.25);
@@ -7,7 +16,6 @@
   font-weight: 400;
   line-height: normal;
   text-align: center;
-  margin-top: 139px;
 }
 @media (max-width: 700px) {
   .section-photo.photo.section .photo__title {
@@ -18,7 +26,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 20px;
   }
 }
 .section-photo.photo.section .photo__slider {
@@ -117,7 +124,6 @@
   margin-top: 100px;
   max-width: 307px;
   text-align: center;
-  margin-bottom: 140px;
 }
 @media (max-width: 700px) {
   .section-photo.photo.section .photo__button {

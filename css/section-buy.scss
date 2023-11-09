@@ -7,12 +7,12 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        margin-top: 76px;
+        padding-top: 76px;
         margin-bottom: 20px;
 
         @media(max-width: 1300px) {
             font-size: 100px;
-            margin-top: 50px;
+            padding-top: 50px;
             margin-bottom: 15px;
         }
 
@@ -25,7 +25,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            margin-top: 25px;
+            padding-top: 25px;
         }
     }
     .buy__descr {
@@ -70,7 +70,7 @@
                 height: 24.33px;
             }
             div {
-                width: 80%; // test template
+                width: 0%; // test template
                 background: url('/source/progress.jpg');
                 height: 100%;
                 position: absolute;
@@ -108,10 +108,10 @@
 
     .buy__tcat {
         margin-top: 100px;
-        margin-bottom: 100px;
+        padding-bottom: 100px;
         @media(max-width: 700px) {
             margin-top: 17px;
-            margin-bottom: 38px;
+            padding-bottom: 38px;
         }
         .buy__tcat__image {
             margin: 0 auto;

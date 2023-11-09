@@ -8,10 +8,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="loader">
+        <div class="loader__inner">
+            <div class="loader__title">WAIT PLEASE...</div>
+            <div class="loader__figure svg-loader">
+                <svg class="svg-container" height="100" width="100" viewBox="0 0 100 100">
+                  <circle class="loader-svg bg" cx="50" cy="50" r="45"></circle>
+                  <circle class="loader-svg animate" cx="50" cy="50" r="45"></circle>
+                </svg>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__line">
-                <a href="#" class="header__flex">
+                <a href="/" class="header__flex">
                     <img src="source/logo.svg" alt="">
                     <p>
                         <span>Pumba</span>
@@ -19,9 +30,9 @@
                     </p>
                 </a>
                 <div class="header__buttons">
-                    <a href="#">Home</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Track Order</a>
+                    <a href="/">Home</a>
+                    <a href="/buy.html">Shop</a>
+                    <a href="/check_order.html">Track Order</a>
                 </div>
                 <div class="header__flex header__flex_cart">
                     <img src="source/cart.svg" alt="">
@@ -39,19 +50,19 @@
                    <div class="check__form__inputs">
                         <div class="check__form__inputs__item">
                             <span>Order ID*</span>
-                            <input type="text" placeholder="Found in your order confirmation number">
+                            <input id="track-order" type="text" placeholder="Found in your order confirmation number">
                         </div>
                         <div class="check__form__inputs__item">
                             <span>Billing Email</span>
-                            <input type="text" placeholder="Email you used during checkout">
+                            <input id="track-email" type="text" placeholder="Email you used during checkout">
                         </div>
                    </div>
-                   <div class="check__form__button">TRACK ORDER</div>
+                   <a id="track-button" href="#check-order" class="check__form__button">TRACK ORDER</a>
             </form>
-            <div class="check__order">
+            <div class="check__order none" id="check-order-none">
                 <div class="check__order__title">Order #OOOOOOO</div>
                 <div class="check__order__status">
-                    <div class="check__order__status__item active">
+                    <div class="check__order__status__item">
                         <div class="check__order__status__item__bar">
                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="31" viewBox="0 0 35 31" fill="none">
                                 <path d="M26.7877 2.43594C28.5274 0.437119 31.376 0.412442 33.1501 2.38082C34.9242 4.3492 34.9521 7.56524 33.2123 9.56406L26.7877 2.43594ZM33.2123 9.56406L14.7057 30.8265L8.28105 23.6984L26.7877 2.43594L33.2123 9.56406Z" fill="white"/>
@@ -60,7 +71,7 @@
                         </div>
                         <div class="check__order__status__item__text">Processed</div>
                     </div>
-                    <div class="check__order__status__item active">
+                    <div class="check__order__status__item">
                         <div class="check__order__status__item__bar">
                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="31" viewBox="0 0 35 31" fill="none">
                                 <path d="M26.7877 2.43594C28.5274 0.437119 31.376 0.412442 33.1501 2.38082C34.9242 4.3492 34.9521 7.56524 33.2123 9.56406L26.7877 2.43594ZM33.2123 9.56406L14.7057 30.8265L8.28105 23.6984L26.7877 2.43594L33.2123 9.56406Z" fill="white"/>
@@ -69,7 +80,7 @@
                         </div>
                         <div class="check__order__status__item__text">Shipped</div>
                     </div>
-                    <div class="check__order__status__item active">
+                    <div class="check__order__status__item">
                         <div class="check__order__status__item__bar">
                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="31" viewBox="0 0 35 31" fill="none">
                                 <path d="M26.7877 2.43594C28.5274 0.437119 31.376 0.412442 33.1501 2.38082C34.9242 4.3492 34.9521 7.56524 33.2123 9.56406L26.7877 2.43594ZM33.2123 9.56406L14.7057 30.8265L8.28105 23.6984L26.7877 2.43594L33.2123 9.56406Z" fill="white"/>
@@ -90,13 +101,16 @@
                 </div>
                 <div class="check__order__date">Expected Arrival: O1/O1/24</div>
             </div>
+            <div class="check__order none empty" id="check-order-none">
+                <div class="check__order__title">Order Not Found</div>
+            </div>
         </div>
     </section>
     <footer class="footer">
         <div class="container">
             <div class="footer__flex">
                 <div class="footer__logo">
-                    <div class="footer__logo__inner">
+                    <a href="/" class="footer__logo__inner">
                         <img src="source/logo.svg" alt="">
                         <p class="footer__logo__text">
                             <span>Pumba</span>
@@ -106,18 +120,18 @@
                             <span>© 2023. Pumba plushie.</span>
                             <span>All rights reserved.</span>
                         </p>
-                    </div>
-                    <div class="footer__logo__downtext">pumbacaracalstore@gmail.com</div>
+                    </a>
+                    <a href="pumbacaracalstore@gmail.com" class="footer__logo__downtext">pumbacaracalstore@gmail.com</a>
                 </div>
                 <div class="footer__right">
                     <div class="footer__input">
                         <input type="text" placeholder="Navigation">
                     </div>
                     <div class="footer__buttons">
-                        <a href="#" class="footer__buttons__item">Home</a>
-                        <a href="#" class="footer__buttons__item">Track your order</a>
-                        <a href="#" class="footer__buttons__item">Reviews</a>
-                        <a href="#" class="footer__buttons__item">Privacy & Terms</a>
+                        <a href="/" class="footer__buttons__item">Home</a>
+                        <a href="/check_order.html" class="footer__buttons__item">Track your order</a>
+                        <a href="/photos.html" class="footer__buttons__item">Reviews</a>
+                        <a href="/terms.html" class="footer__buttons__item">Privacy & Terms</a>
                     </div>
                 </div>
             </div>
@@ -164,5 +178,8 @@
         </div>
     </div>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/axios@0.27.2/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"> </script>
+    <script src="js/check-order.js"></script>
 </body>
 </html>

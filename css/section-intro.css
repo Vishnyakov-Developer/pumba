@@ -1,9 +1,9 @@
-.section-intro.intro.section button {
+.section-intro.intro.section a, .section-intro.intro.section button {
   filter: none !important;
 }
 .section-intro.intro.section .intro__front {
   padding-top: 150px;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -199,7 +199,7 @@
     line-height: normal;
   }
 }
-.section-intro.intro.section .intro__text button {
+.section-intro.intro.section .intro__text a, .section-intro.intro.section .intro__text button {
   color: #FFF;
   text-shadow: 2.6194081306px 4.7149348259px 2.0955264568px rgba(0, 0, 0, 0.25);
   font-family: "neskid";
@@ -218,13 +218,13 @@
   margin-top: 30px;
 }
 @media (max-width: 1300px) {
-  .section-intro.intro.section .intro__text button {
+  .section-intro.intro.section .intro__text a, .section-intro.intro.section .intro__text button {
     padding: 12px 50px;
     font-size: 30px;
   }
 }
 @media (max-width: 700px) {
-  .section-intro.intro.section .intro__text button {
+  .section-intro.intro.section .intro__text a, .section-intro.intro.section .intro__text button {
     display: none;
   }
 }
@@ -243,12 +243,12 @@
 .section-intro.intro.section .intro__front.two .intro__text {
   align-items: inherit;
 }
-.section-intro.intro.section .intro__front.two .intro__text button {
+.section-intro.intro.section .intro__front.two .intro__text a, .section-intro.intro.section .intro__front.two .intro__text button {
   align-self: start;
   margin-top: 70px;
 }
 @media (max-width: 990px) {
-  .section-intro.intro.section .intro__front.two .intro__text button {
+  .section-intro.intro.section .intro__front.two .intro__text a, .section-intro.intro.section .intro__front.two .intro__text button {
     margin-top: 20px;
   }
 }

@@ -121,6 +121,16 @@ header.header {
         display: flex;
         align-items: center;
         gap: 10px;
+        &.header__flex_cart {
+            cursor: pointer;
+            img {
+                @media(max-width: 700px) {
+                    width: 15.185px;
+                    height: 13.45px;
+                    flex-shrink: 0;
+                }
+            }
+        }
         p {
             display: flex;
             flex-direction: column;
@@ -527,4 +537,85 @@ html::-webkit-scrollbar-thumb {
 
 .none {
     display: none !important;   
+}
+
+.svg-loader{
+    display:flex;
+    position: relative;
+    align-content: space-around;
+    justify-content: center;
+  }
+  .loader-svg{
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    fill: none;
+    stroke-width: 5px;
+    stroke-linecap: round;
+    stroke: #F09;
+  }
+  .loader-svg.bg{
+    stroke-width: 8px;
+    stroke: rgb(207, 205, 245);
+  }
+
+  .animate{
+    stroke-dasharray: 242.6;
+    animation: fill-animation 1s cubic-bezier(1,1,1,1) 0s infinite;
+  }
+  
+  @keyframes fill-animation{
+    0%{
+      stroke-dasharray: 40 242.6;
+      stroke-dashoffset: 0;
+    }
+    50%{
+      stroke-dasharray: 141.3;
+      stroke-dashoffset: 141.3;
+    }
+    100%{
+      stroke-dasharray: 40 242.6;
+      stroke-dashoffset: 282.6;
+    }
+  }
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: wheat;
+    height: 100vh;
+    width: 100vw;
+    z-index: 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .loader__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .loader__title {
+        animation: loader-title 1s cubic-bezier(1,1,1,1) 0s infinite;
+        transition: all 0.5s;
+        font-size: 40px;
+        font-family: 'neskid';
+    }
+}
+
+@keyframes loader-title{
+    0%{
+      color: yellow;
+    }
+    50%{
+        color: red;
+    }
+    100%{
+        color: green($color: #000000);
+    }
+  }
+
+input.warning {
+    border-color: red !important;
 }
