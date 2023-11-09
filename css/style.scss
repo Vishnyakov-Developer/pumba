@@ -8,7 +8,7 @@
 @import 'section-checkout.scss';
 
 section {
-    
+    background: rgba(255, 0, 184, 0.41);
 }
 
 body {
@@ -17,7 +17,7 @@ body {
             transition: none !important;
         }
     }
-    background: rgba(255, 0, 184, 0.41);
+    background: white;
     position: relative;
     &::after {
         content: '';
@@ -491,7 +491,7 @@ footer.footer {
                 width: 200.386px;
                 height: 50.874px;
                 font-size: 25px;
-                margin-top: 40px;
+                margin-top: 0;
             }
         }
     }

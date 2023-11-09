@@ -1930,8 +1930,12 @@
   }
 }
 
-body {
+section {
   background: rgba(255, 0, 184, 0.41);
+}
+
+body {
+  background: white;
   position: relative;
 }
 body.loading * {
@@ -2423,7 +2427,7 @@ footer.footer .footer__flex .footer__logo .footer__logo__inner .footer__logo__de
     width: 200.386px;
     height: 50.874px;
     font-size: 25px;
-    margin-top: 40px;
+    margin-top: 0;
   }
 }
 
