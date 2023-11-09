@@ -8,7 +8,7 @@
 @import 'section-checkout.scss';
 
 section {
-    background: rgba(255, 0, 184, 0.41);
+    background: rgb(255, 0, 184, 0.41);
 }
 
 body {
@@ -388,6 +388,9 @@ footer.footer {
 
         .cart__image {
             margin-top: 30px;
+            @media(max-height: 880px) {
+                margin-top: 0;
+            }
             img {
                 max-width: 329px;
                 max-height: 337.232px;
@@ -404,6 +407,9 @@ footer.footer {
             display: flex;
             gap: 27px;
             align-items: center;
+            @media(max-height: 880px) {
+                margin-top: 0;
+            }
 
             span {
                 color: #000;
@@ -459,6 +465,7 @@ footer.footer {
 
             @media(max-width: 860px) {
                 font-size: 40px;
+                margin-top: 0;
             }
         }
 
@@ -486,7 +493,8 @@ footer.footer {
             margin-bottom: 60px;
             margin-left: auto;
             margin-right: auto;
-
+            position: relative;
+            top: -50px;
             @media(max-width: 860px) {
                 width: 200.386px;
                 height: 50.874px;
