@@ -1,0 +1,137 @@
+.intro__text.p-1 {
+    div {
+        filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
+        @media(max-width: 800px) {
+            filter: drop-shadow(1.166850209236145px 2.567070722579956px 0px rgba(0, 0, 0, 0.25));
+            line-height: 82% !important;
+            text-align: center;
+        }
+
+        templ {
+            @media(max-width: 800px) {
+                font-size: 51px;
+            }
+        }
+        
+    }
+    span {
+        text-shadow: 0px 4.37000036239624px 0px rgba(0, 0, 0, 0.25);
+        @media(max-width: 800px) {
+            text-shadow: 0px 1.327903389930725px 0px rgba(0, 0, 0, 0.25);
+
+        }
+    }
+    a {
+        text-shadow: 0.9697130918502808px 1.7454835176467896px 0.775770366191864px rgba(0, 0, 0, 0.25); 
+        @media(max-width: 800px) {
+            text-shadow: 2.619408130645752px 4.714934825897217px 2.0955264568328857px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+.intro__text.p-2 {
+    .p-2__title {
+        text-shadow: 5px 9px 0px rgba(0, 0, 0, 0.25);
+        @media(max-width: 800px) {
+            text-shadow: 2.13748836517334px 3.8474791049957275px 0px rgba(0, 0, 0, 0.20);
+
+        }
+    }
+    .list {
+        @media(max-width: 800px) {
+            
+            text-shadow: 0px 1.3364564180374146px 0px rgba(0, 0, 0, 0.25);
+        }
+        
+        text-shadow: 0px 4.37000036239624px 0px rgba(0, 0, 0, 0.25);
+  
+    }
+}
+
+.photo__title {
+    text-shadow: 9.528302192687988px 17.150943756103516px 0px rgba(0, 0, 0, 0.25);
+ 
+    @media(max-width: 800px) {
+        text-shadow: 4.174600601196289px 7.514281749725342px 0px rgba(0, 0, 0, 0.25);
+
+    }
+}
+
+.photo__button { 
+    text-shadow: 2.619408130645752px 4.714934825897217px 2.0955264568328857px rgba(0, 0, 0, 0.25);
+    @media(max-width: 800px) {
+        text-shadow: 1.660671591758728px 2.989208936691284px 1.3285373449325562px rgba(0, 0, 0, 0.25); 
+    }
+}
+
+.buy__title {
+    filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
+    @media(max-width: 800px) {
+        filter: drop-shadow(1.322261929512024px 2.9089763164520264px 0px rgba(0, 0, 0, 0.25));
+    }
+}
+
+.buy__descr {
+    text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+    @media(max-width: 800px) {
+        text-shadow: 0px 1.2248220443725586px 0px rgba(0, 0, 0, 0.25);
+
+    }
+}
+
+.buy__progress__text span {
+    filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25)); 
+    @media(max-width: 800px) {
+        filter: drop-shadow(1.322261929512024px 2.9089763164520264px 0px rgba(0, 0, 0, 0.25));
+    }
+}
+
+.buy__tcat__text__default {
+    text-shadow: 5px 9px 0px rgba(0, 0, 0, 0.25);
+
+    @media(max-width: 800px) {
+        text-shadow: 1.5204488039016724px 2.7368078231811523px 0px rgba(0, 0, 0, 0.25);
+    }
+
+}
+
+.buy__tcat__text__btns button {
+    text-shadow: 2.619408130645752px 4.714934825897217px 2.0955264568328857px rgba(0, 0, 0, 0.25);
+    @media(max-width: 800px) {
+        text-shadow: 1.5522418022155762px 2.7940354347229004px 1.2417935132980347px rgba(0, 0, 0, 0.25);
+
+    }
+}
+
+.checkout__title {
+    filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
+    @media(max-width: 800px) {
+        filter: none;
+        text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.done__title {
+    filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
+    @media(max-width: 800px) {
+         filter: none;
+         text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+ 
+    }
+}
+
+.check__title {
+    filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
+    @media(max-width: 800px) {
+        text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+        filter: none ;
+    }
+}
+
+.terms__title {
+    filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
+    @media(max-width: 800px) {
+        text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+        filter: none ;
+    }
+}

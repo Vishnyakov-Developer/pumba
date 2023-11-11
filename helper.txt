@@ -1,0 +1,7 @@
+object local storage -> 
+
+{
+    productType1: 0,
+    productType2: 0
+    
+}

@@ -21,7 +21,6 @@
         @media(max-width: 700px) {
              padding: 23px 0 13px 0;
              color: #FFF;
-            text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
             font-family: 'neskid';
             font-size: 55px;
             font-style: normal;
@@ -52,7 +51,8 @@
             border-radius: 29px;
             background: #FFF;
             box-shadow: 0px 2.1125px 0px 0px rgba(0, 0, 0, 0.10);
-            margin: 0 0 25px 0;
+            margin: 0 auto 25px auto;
+            padding: 20px 20px;
         }
 
         .check__form__title {
@@ -82,7 +82,6 @@
         }
         .check__form__button {
             color: #FFF;
-            text-shadow: 2.296074867248535px 4.132935047149658px 1.8368598222732544px rgba(0, 0, 0, 0.25);
             font-family: 'neskid';
             font-size: 52.594px;
             font-style: normal;
@@ -98,7 +97,10 @@
             box-shadow: 0px -27.17344px 72.75468px 0px rgba(0, 0, 0, 0.15) inset;
             padding: 16px 55px;
             cursor: pointer;
-
+            transition: background 1s;
+            &:hover {
+                background: #FECBDE;
+            }
             @media(max-width: 990px) {
                 font-size: 30px;
                 border-radius: 30px;
@@ -106,7 +108,6 @@
 
             @media(max-width: 700px) {
                 color: #FFF;
-                text-shadow: 0.8731420040130615px 1.5716557502746582px 0.6985135674476624px rgba(0, 0, 0, 0.25);
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 400;

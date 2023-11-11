@@ -10,6 +10,11 @@
         padding-top: 76px;
         margin-bottom: 20px;
 
+        transition: opacity 1s;
+        &:hover {
+            opacity: 0.5;
+        }
+
         @media(max-width: 1300px) {
             font-size: 100px;
             padding-top: 50px;
@@ -20,7 +25,6 @@
             color: #FFF;
             text-align: center;
             font-family: 'neskid';
-            filter: drop-shadow(1.322261929512024px 2.9089763164520264px 0px rgba(0, 0, 0, 0.25));
             font-size: 50.123px;
             font-style: normal;
             font-weight: 400;
@@ -31,7 +35,6 @@
     .buy__descr {
         color: #FFF;
         text-align: center;
-        text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
         font-family: 'neskid';
         font-size: 52.468px;
         font-style: normal;
@@ -42,7 +45,6 @@
         @media(max-width: 700px) {
             color: #FFF;
             text-align: center;
-            text-shadow: 0px 1.2248220443725586px 0px rgba(0, 0, 0, 0.25);
             font-size: 16.066px;
             font-style: normal;
             font-weight: 400;
@@ -52,18 +54,19 @@
     }
 
     .buy__progress {
+        
         width: 90%;
         margin: auto;
         @media(max-width: 700px) {
             width: 100%;
         }
         .buy__progress__line {
+            box-shadow: 0px -4px 11px 0px rgba(0, 0, 0, 0.25) inset;
             width: 100%;
             height: 92px;
             border-radius: 116px;
             background: #FE63C4;
             margin: 0 auto;
-            box-shadow: 0px -4px 11px 0px rgba(0, 0, 0, 0.25) inset;
             overflow: hidden;
             position: relative;
             @media(max-width: 700px) {
@@ -77,6 +80,7 @@
                 left: 0;
                 animation: moveBackground 5s steps(30) infinite;
                 transition: all 0.5s;
+                border-radius: 0 120px 120px 0;
                 @media(max-width: 700px) {
                     background: url('/source/progress-mobile.jpg');
                 }
@@ -161,7 +165,6 @@
             align-items: center;
             .buy__tcat__text__default {
                 color: #FFF;
-                text-shadow: 5px 9px 0px rgba(0, 0, 0, 0.25);
                 font-family: 'neskid';
                 font-size: 92.159px;
                 font-style: normal;
@@ -183,6 +186,12 @@
             gap: 20px;
         }
         button {
+            cursor: pointer;
+            &:hover {
+                background:rgba(0, 0, 0, 0.20);
+            }
+
+            transition: background 0.8s;
             padding: 20px 30px;
             outline: none;
             border: none;
@@ -200,7 +209,6 @@
             box-shadow: 0px -31px 83px 0px rgba(0, 0, 0, 0.20) inset;
 
             color: #FFF;
-            text-shadow: 2.619408130645752px 4.714934825897217px 2.0955264568328857px rgba(0, 0, 0, 0.25);
             font-family: 'neskid';
             font-size: 60px;
             font-style: normal;
@@ -214,7 +222,6 @@
             }
             @media(max-width: 700px) {
                 color: #FFF;
-                text-shadow: 1.5522418022155762px 2.7940354347229004px 1.2417935132980347px rgba(0, 0, 0, 0.25);
                 font-size: 35.556px;
                 font-style: normal;
                 font-weight: 400;

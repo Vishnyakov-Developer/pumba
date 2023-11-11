@@ -9,18 +9,20 @@
 }
 .section-photo.photo.section .photo__title {
   color: #FFF;
-  text-shadow: 9.5283021927px 17.1509437561px 0px rgba(0, 0, 0, 0.25);
   font-family: "neskid";
   font-size: 175.624px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-align: center;
+  transition: all 0.5s;
+}
+.section-photo.photo.section .photo__title:hover {
+  transform: translateX(10px);
 }
 @media (max-width: 700px) {
   .section-photo.photo.section .photo__title {
     color: #FFF;
-    text-shadow: 4.1746006012px 7.5142817497px 0px rgba(0, 0, 0, 0.25);
     font-family: "neskid";
     font-size: 76.945px;
     font-style: normal;
@@ -31,9 +33,15 @@
 .section-photo.photo.section .photo__slider {
   margin-top: 65px;
   width: 80%;
+  filter: drop-shadow(10px 14px 0px rgba(0, 0, 0, 0.25));
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+@media (max-width: 800px) {
+  .section-photo.photo.section .photo__slider {
+    filter: drop-shadow(2.8817360401px 4.0344305038px 0px rgba(0, 0, 0, 0.25));
+  }
 }
 @media (max-width: 700px) {
   .section-photo.photo.section .photo__slider {
@@ -41,11 +49,24 @@
     margin-top: 30px;
   }
 }
+.section-photo.photo.section .photo__slider svg {
+  transition: all 0.5s;
+}
+.section-photo.photo.section .photo__slider svg:hover, .section-photo.photo.section .photo__slider svg:active {
+  transform: scale(1.1);
+}
 .section-photo.photo.section .photo__slider .photo__slider__arrow-left {
   position: absolute;
   bottom: 43%;
   left: -8%;
   cursor: pointer;
+  z-index: 2;
+}
+.section-photo.photo.section .photo__slider .photo__slider__arrow-left svg {
+  transition: all 0.5s;
+}
+.section-photo.photo.section .photo__slider .photo__slider__arrow-left svg:hover {
+  transform: scale(1.05);
 }
 @media (max-width: 1300px) {
   .section-photo.photo.section .photo__slider .photo__slider__arrow-left {
@@ -64,6 +85,7 @@
   bottom: 43%;
   right: -8%;
   cursor: pointer;
+  transition: all 0.5s;
 }
 @media (max-width: 1300px) {
   .section-photo.photo.section .photo__slider .photo__slider__arrow-right {
@@ -78,6 +100,7 @@
   }
 }
 .section-photo.photo.section .photo__slider .photo__photo__gallery {
+  display: flex;
   width: 100%;
   border-radius: 83px;
   overflow: hidden;
@@ -114,7 +137,6 @@
   background: #F09;
   box-shadow: 0px -31px 83px 0px rgba(0, 0, 0, 0.2) inset;
   color: #FFF;
-  text-shadow: 2.6194081306px 4.7149348259px 2.0955264568px rgba(0, 0, 0, 0.25);
   font-family: "neskid";
   font-size: 60px;
   font-style: normal;
@@ -124,11 +146,14 @@
   margin-top: 100px;
   max-width: 307px;
   text-align: center;
+  transition: opacity 0.5s;
+}
+.section-photo.photo.section .photo__button:hover, .section-photo.photo.section .photo__button:active {
+  opacity: 0.5;
 }
 @media (max-width: 700px) {
   .section-photo.photo.section .photo__button {
     color: #FFF;
-    text-shadow: 1.6606715918px 2.9892089367px 1.3285373449px rgba(0, 0, 0, 0.25);
     font-size: 38.039px;
     font-style: normal;
     font-weight: 400;

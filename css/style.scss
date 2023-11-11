@@ -6,12 +6,27 @@
 @import 'section-check.scss';
 @import 'section-done.scss';
 @import 'section-checkout.scss';
+@import 'shadows.scss';
 
 section {
     background: rgba(255, 0, 184, 0.41);
+    position: relative;
+    * {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    scroll-behavior: smooth;
 }
 
 body {
+    scroll-behavior: smooth;
     &.loading {
         * {
             transition: none !important;
@@ -22,7 +37,7 @@ body {
     &::after {
         content: '';
         position: fixed;
-        width: 1008.593px;
+        width: 508.593px;
         height: 636.577px;
         flex-shrink: 0;
 
@@ -32,14 +47,14 @@ body {
 
         top: 10%;
         left: 0;
-        z-index: -1;
+        z-index: 0;
     }
 
     &::before {
         content: '';
         position: fixed;
 
-        width: 1008.593px;
+        width: 500.593px;
         height: 753.521px;
         flex-shrink: 0;
 
@@ -49,7 +64,7 @@ body {
 
         top: 0%;
         right: 0;
-        z-index: -1;
+        z-index: 1;
     }
 }
 
@@ -76,6 +91,8 @@ header.header {
     background: #FFF;
     box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.10);
     font-family: 'Hey Comic';
+    position: relative;
+    z-index: 2;
     .header__line {
         display: flex;
         align-items: center;
@@ -108,6 +125,13 @@ header.header {
             line-height: normal;
             gap: 12px;
         }
+
+        a {
+            transition: transform 1s;
+            &:hover {
+                transform: translateY(3.5px);
+            }
+        }
     }
     .header__flex {
         color: #000;
@@ -121,6 +145,10 @@ header.header {
         display: flex;
         align-items: center;
         gap: 10px;
+        transition: opacity 0.8s;
+        &:hover {
+            opacity: 0.4;
+        }
         &.header__flex_cart {
             cursor: pointer;
             img {
@@ -128,6 +156,27 @@ header.header {
                     width: 15.185px;
                     height: 13.45px;
                     flex-shrink: 0;
+                }
+            }
+            position: relative;
+            .count {
+                position: absolute;
+                background:#F09;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 13px;
+                text-align: center;
+                top: 5px;
+                right: 40px;
+                color: white;
+
+                @media(max-width: 700px) {
+                    top: -3px;
+                    right: 36px;
                 }
             }
         }
@@ -163,7 +212,7 @@ a {
 
 footer.footer {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     padding: 35px 0 60px 0;
     background: #FFF;
     box-shadow: 0px 15px 56px 0px rgba(0, 0, 0, 0.25);
@@ -183,6 +232,13 @@ footer.footer {
 
             @media(max-width: 990px) {
                 font-size: 11px;
+            }
+
+            a {
+                transition: color 0.5s;
+                &:hover, &:active {
+                    color: #F09;
+                }
             }
 
             @media(max-width: 700px) {
@@ -222,6 +278,10 @@ footer.footer {
         font-weight: 400;
         line-height: 149.9%; /* 17.988px */
 
+        transition: all 0.5s;
+        &:hover {
+            color: black;
+        }
         @media(max-width: 700px) {
             color: rgba(0, 0, 0, 0.40);
             text-align: center;
@@ -252,6 +312,12 @@ footer.footer {
                 line-height: 149.9%; /* 20.986px */
                 @media(max-width: 700px) {
                     display: none;
+                }
+
+                transition: all 1s;
+                &:hover {
+                    color: black;
+                    transform: scale(1.1);
                 }
             }
             .footer__logo__inner {
@@ -311,6 +377,16 @@ footer.footer {
     }
 }
 
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: brightness(0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+}
+
 .cart {
     width: 636px;
     background: #FFF;
@@ -324,6 +400,7 @@ footer.footer {
     box-shadow: -20px 4px 154px 0px rgba(0, 0, 0, 0.15);
     transform: translateX(150%);
     transition: transform 1s;
+    
     @media(max-width: 860px) {
         width: 100%;
     }
@@ -335,6 +412,10 @@ footer.footer {
         left: -110px;
         top: 20px;
         cursor: pointer;
+        transition: transform 0.5s;
+        &:hover, &:active {
+            transform: scale(110%);
+        }
         @media(max-width: 860px) {
             left: inherit;
             right: 32px;
@@ -371,6 +452,7 @@ footer.footer {
         display: flex;
         flex-direction: column;    
         align-items: center;
+        gap: 20px;
         @media(max-width: 860px) {
             justify-content: space-between;
         }
@@ -422,12 +504,17 @@ footer.footer {
             }
 
             span {
+                cursor: pointer;
                 color: #000;
                 font-family: 'neskid';
                 font-size: 84.333px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+                transition: transform 0.25s;
+                &:active {
+                    transform: scale(0.4);
+                }
                 @media(max-height: 770px) {
                     font-size: 50px;
                 }
@@ -490,7 +577,6 @@ footer.footer {
             cursor: pointer;
 
             color: #FFF;
-            text-shadow: 2.301057815551758px 4.141904354095459px 1.840846300125122px rgba(0, 0, 0, 0.25);
             font-family: 'neskid';
             font-size: 52.708px;
             font-style: normal;
@@ -510,6 +596,11 @@ footer.footer {
                 height: 50.874px;
                 font-size: 25px;
                 margin-top: 0;
+            }
+
+            transition: opacity 0.8s;
+            &:hover {
+                opacity: 0.4;
             }
         }
     }

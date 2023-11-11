@@ -1,6 +1,3 @@
-.section-intro.intro.section a, .section-intro.intro.section button {
-  filter: none !important;
-}
 .section-intro.intro.section .intro__front {
   padding-top: 150px;
   padding-bottom: 80px;
@@ -46,6 +43,13 @@
     max-width: 187px;
     align-items: center;
   }
+}
+.section-intro.intro.section .intro__text a, .section-intro.intro.section .intro__text button {
+  transition: all 0.8s;
+}
+.section-intro.intro.section .intro__text a:hover, .section-intro.intro.section .intro__text a:active, .section-intro.intro.section .intro__text button:hover, .section-intro.intro.section .intro__text button:active {
+  opacity: 0.5;
+  transform: translateY(10px);
 }
 .section-intro.intro.section .intro__img {
   display: flex;
@@ -98,7 +102,6 @@
 .section-intro.intro.section .intro__button__mobile {
   display: none;
   color: #FFF;
-  text-shadow: 0.9697130919px 1.7454835176px 0.7757703662px rgba(0, 0, 0, 0.25);
   font-family: "neskid";
   font-size: 22.212px;
   font-style: normal;
@@ -119,18 +122,12 @@
   }
 }
 .section-intro.intro.section .intro__text > div {
-  filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
   color: #FFF;
   font-family: "neskid";
   font-size: 172.534px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-@media (max-width: 1000px) {
-  .section-intro.intro.section .intro__text > div {
-    filter: none;
-  }
 }
 @media (max-width: 1300px) {
   .section-intro.intro.section .intro__text > div {
@@ -153,21 +150,14 @@
   }
 }
 .section-intro.intro.section .intro__text span {
-  filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.25));
   color: #FFF;
   text-align: center;
-  text-shadow: 0px 4.3700003624px 0px rgba(0, 0, 0, 0.25);
   font-family: Hey Comic;
   font-size: 32.961px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   max-width: 618px;
-}
-@media (max-width: 1000px) {
-  .section-intro.intro.section .intro__text span {
-    filter: none;
-  }
 }
 @media (max-width: 1300px) {
   .section-intro.intro.section .intro__text span {
@@ -179,7 +169,6 @@
   .section-intro.intro.section .intro__text span {
     color: #FFF;
     text-align: center;
-    text-shadow: 0px 1.3279033899px 0px rgba(0, 0, 0, 0.25);
     font-family: Hey Comic;
     font-size: 14.016px;
     font-style: normal;
@@ -191,7 +180,6 @@
   .section-intro.intro.section .intro__text span {
     color: #FFF;
     text-align: center;
-    text-shadow: 0px 1.3279033899px 0px rgba(0, 0, 0, 0.25);
     font-family: Hey Comic;
     font-size: 10.016px;
     font-style: normal;
@@ -201,7 +189,6 @@
 }
 .section-intro.intro.section .intro__text a, .section-intro.intro.section .intro__text button {
   color: #FFF;
-  text-shadow: 2.6194081306px 4.7149348259px 2.0955264568px rgba(0, 0, 0, 0.25);
   font-family: "neskid";
   font-size: 60px;
   font-style: normal;
@@ -210,7 +197,6 @@
   margin-top: 20px;
   border-radius: 96px;
   background: #F09;
-  box-shadow: 0px -31px 83px 0px rgba(0, 0, 0, 0.2) inset;
   padding: 19px 100px;
   outline: none;
   border: none;
@@ -235,10 +221,12 @@
     flex-shrink: 0;
   }
 }
-.section-intro.intro.section .intro__front.two .intro__img__back {
-  width: 135.901px;
-  height: 251.097px;
-  flex-shrink: 0;
+@media (max-width: 800px) {
+  .section-intro.intro.section .intro__front.two .intro__img__back {
+    width: 135.901px;
+    height: 251.097px;
+    flex-shrink: 0;
+  }
 }
 .section-intro.intro.section .intro__front.two .intro__text {
   align-items: inherit;
@@ -271,7 +259,6 @@
 @media (max-width: 700px) {
   .section-intro.intro.section .intro__front.two .intro__text div {
     color: #FFF;
-    text-shadow: 2.1374883652px 3.847479105px 0px rgba(0, 0, 0, 0.2);
     font-family: "neskid";
     font-size: 39.398px;
     font-style: normal;
@@ -327,7 +314,6 @@
 @media (max-width: 700px) {
   .section-intro.intro.section .intro__front.two .intro__text .list .list__descr {
     color: #FFF;
-    text-shadow: 0px 1.336456418px 0px rgba(0, 0, 0, 0.25);
     font-family: Hey Comic;
     font-size: 12.233px;
     font-style: normal;
@@ -338,7 +324,6 @@
 @media (max-width: 700px) {
   .section-intro.intro.section .intro__front.two .intro__text .list .list__down {
     color: #FFF;
-    text-shadow: 0px 1.336456418px 0px rgba(0, 0, 0, 0.25);
     font-family: Hey Comic;
     font-size: 12.233px;
     font-style: normal;
@@ -349,7 +334,6 @@
 @media (max-width: 700px) {
   .section-intro.intro.section .intro__front.two .intro__text .list .list__title {
     color: #FFF;
-    text-shadow: 0px 1.336456418px 0px rgba(0, 0, 0, 0.25);
     font-family: Hey Comic;
     font-size: 12.233px;
     font-style: normal;

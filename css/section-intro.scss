@@ -1,7 +1,7 @@
 .section-intro.intro.section {
     a,button {
-        filter: none !important;
     }
+    
     .intro__front {
         
         padding-top: 150px;
@@ -41,6 +41,14 @@
         @media(max-width: 700px) {
             max-width: 187px;
             align-items: center;
+        }
+
+        a,button {
+            transition: all 0.8s;
+            &:hover, &:active {
+                opacity: 0.5;
+                transform: translateY(10px);
+            }
         }
     }
     .intro__img {
@@ -85,7 +93,6 @@
             display: inline-block;
         }
         color: #FFF;
-        text-shadow: 0.9697130918502808px 1.7454835176467896px 0.775770366191864px rgba(0, 0, 0, 0.25);
         font-family: 'neskid';
         font-size: 22.212px;
         font-style: normal;
@@ -102,10 +109,8 @@
     }
     .intro__text {
         & > div {
-            filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
 
             @media(max-width: 1000px) {
-                filter: none;
             }
             color: #FFF;
             font-family: 'neskid';
@@ -130,13 +135,10 @@
             }
         }
         span {
-            filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.25));
             @media(max-width: 1000px) {
-                filter: none;
             }
             color: #FFF;
             text-align: center;
-            text-shadow: 0px 4.37000036239624px 0px rgba(0, 0, 0, 0.25);
             font-family: Hey Comic;
             font-size: 32.961px;
             font-style: normal;
@@ -152,7 +154,6 @@
             @media(max-width: 990px) {
                 color: #FFF;
                 text-align: center;
-                text-shadow: 0px 1.327903389930725px 0px rgba(0, 0, 0, 0.25);
                 font-family: Hey Comic;
                 font-size: 14.016px;
                 font-style: normal;
@@ -162,7 +163,6 @@
             @media(max-width: 700px) {
                 color: #FFF;
                 text-align: center;
-                text-shadow: 0px 1.327903389930725px 0px rgba(0, 0, 0, 0.25);
                 font-family: Hey Comic;
                 font-size: 10.016px;
                 font-style: normal;
@@ -173,7 +173,6 @@
         a,button {
             // filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.25));
             color: #FFF;
-            text-shadow: 2.619408130645752px 4.714934825897217px 2.0955264568328857px rgba(0, 0, 0, 0.25);
             font-family: 'neskid';
             font-size: 60px;
             font-style: normal;
@@ -182,7 +181,6 @@
             margin-top: 20px;
             border-radius: 96px;
             background: #F09;
-            box-shadow: 0px -31px 83px 0px rgba(0, 0, 0, 0.20) inset;
             padding: 19px 100px;
             outline: none;
             border: none;
@@ -212,9 +210,12 @@
                 
             }
             .intro__img__back {
-                width: 135.901px;
-                height: 251.097px;
-                flex-shrink: 0;
+                
+                @media(max-width: 800px) {
+                    width: 135.901px;
+                    height: 251.097px;
+                    flex-shrink: 0;    
+                }
             }
             .intro__text {
                 align-items: inherit;    
@@ -239,7 +240,6 @@
                     }
                     @media(max-width: 700px) {
                         color: #FFF;
-                        text-shadow: 2.13748836517334px 3.8474791049957275px 0px rgba(0, 0, 0, 0.20);
                         font-family: 'neskid';
                         font-size: 39.398px;
                         font-style: normal;
@@ -290,7 +290,6 @@
                     .list__descr {
                         @media(max-width: 700px) {
                             color: #FFF;
-                            text-shadow: 0px 1.3364564180374146px 0px rgba(0, 0, 0, 0.25);
                             font-family: Hey Comic;
                             font-size: 12.233px;
                             font-style: normal;
@@ -301,7 +300,6 @@
                     .list__down {
                         @media(max-width: 700px) {
                             color: #FFF;
-                            text-shadow: 0px 1.3364564180374146px 0px rgba(0, 0, 0, 0.25);
                             font-family: Hey Comic;
                             font-size: 12.233px;
                             font-style: normal;
@@ -312,7 +310,6 @@
                     .list__title {
                         @media(max-width: 700px) {
                             color: #FFF;
-                            text-shadow: 0px 1.3364564180374146px 0px rgba(0, 0, 0, 0.25);
                             font-family: Hey Comic;
                             font-size: 12.233px;
                             font-style: normal;
